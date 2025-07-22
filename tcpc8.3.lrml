@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lrml:LegalRuleML xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ruleml="http://ruleml.org/spec" xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/ ../../schemas/xsd/xsd-compact/lrml-compact.xsd">
+    <lrml:Statements>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_3_1_a_i">
+            <ruleml:Rule key="tcpc_8_3_1_a_i">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Atom>
+                        <ruleml:Rel>complaintHandlingProcess</ruleml:Rel>
+                        <ruleml:Ind>X</ruleml:Ind>
+                    </ruleml:Atom>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>classifyAndAnalyseComplaintsAtLeastEvery3Months</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_3_1_a_ii_1">
+            <ruleml:Rule key="tcpc_8_3_1_a_ii_1">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Atom>
+                        <ruleml:Rel>complaintHandlingProcess</ruleml:Rel>
+                        <ruleml:Ind>X</ruleml:Ind>
+                    </ruleml:Atom>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>monitorComplaintsToIdentifyEmergingIssuesRequiringSpecificAttention</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_3_1_a_ii_2">
+            <ruleml:Rule key="tcpc_8_3_1_a_ii_2">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Atom>
+                        <ruleml:Rel>identifyEmergingIssue</ruleml:Rel>
+                        <ruleml:Ind>X</ruleml:Ind>
+                    </ruleml:Atom>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>addressEmergingIssueAsSoonAsPracticable</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_3_1_a_iii">
+            <ruleml:Rule key="tcpc_8_3_1_a_iii">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Atom>
+                        <ruleml:Rel>identifyAreasRequiringAttention</ruleml:Rel>
+                        <ruleml:Ind>X</ruleml:Ind>
+                    </ruleml:Atom>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>monitorAndRecordProgressToAddressAreasRequiringAttention</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_3_1_b_1">
+            <ruleml:Rule key="tcpc_8_3_1_b_1">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Atom>
+                        <ruleml:Rel>receiveSignificantComplaint</ruleml:Rel>
+                        <ruleml:Ind>X</ruleml:Ind>
+                    </ruleml:Atom>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>rapidlyAndEffectivelyManageSignificantComplaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_3_1_b_2">
+            <ruleml:Rule key="tcpc_8_3_1_b_2">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Atom>
+                        <ruleml:Rel>receiveSignificantComplaint</ruleml:Rel>
+                        <ruleml:Ind>X</ruleml:Ind>
+                    </ruleml:Atom>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>notifySeniorManagementOfSignificantComplaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+    </lrml:Statements>
+</lrml:LegalRuleML>

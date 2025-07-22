@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RuleSet xmlns="http://www.nicta.com.au/bpc/CombinedRuleSetDefinition/0.1" description="Suppliers must implement processes and undertake analysis of their Complaint information to identify and prevent the recurrence of Complaints arising from systemic issues." version="0.1" displayName="Telecommunication Consumer Protections Code C628.2012: Section 8.3: Complaint analysis" uri="TCPC/8.3/ComplaintAnalaysis">
+    <Vocabulary>
+        <Term description="Supplier identifies areas requiring attention through regular analysis of Complaints. These areas include those that are non-compliant with the TCPC." atom="identify areas requiring attention"/>
+        <Term description="Supplier addresses an identified emerging issues as soon as is practicable." atom="address emerging issue as soon as practicable"/>
+        <Term description="Supplier monitors and records progress to address areas requiring attention, including areas of non-compliance with the TCPC." atom="monitor and record progress to address areas requiring attention"/>
+        <Term description="Supplier is rapidly and effectively managing a significant Complaint or Complaint issue." atom="rapidly and effectively manage significant complaint"/>
+        <Term description="Supplier has process to notify senior management of significant Complaints or Complaint issues." atom="notify senior management of significant complaint"/>
+        <Term description="Supplier has identified an emerging issue while monitoring Complaints." atom="identify emerging issue"/>
+        <Term description="Classify and analyse complaints at least every 3 months to identify recurring problems and issues including areas of non-compliance with the TCPC." atom="classify and analyse complaints at least every 3 months"/>
+        <Term description="Supplier has a complaint handling process as per TCPC section 8." atom="complaint handling process"/>
+        <Term description="Supplier Monitors Complaints to identify emerging issues requiring specific attention." atom="monitor Complaints to identify emerging issues requiring specific attention"/>
+        <Term description="Supplier receives and is handling a significant Complaint." atom="receive significant complaint"/>
+    </Vocabulary>
+    <Rules>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.3.1.b.2">
+            <ControlObjective>Suppliers must ensure there is a process for ... notifying appropriately senior management of any significant Complaints or Complaint issues.</ControlObjective>
+            <LegalRepresentation>Notifying management: Suppliers must ensure there is a process for the rapid and effective management of, and notification to appropriately senior management of any significant Complaints or Complaint issues.</LegalRepresentation>
+            <FormalRepresentation>receive significant complaint(X) =&gt; [OAPNP]notify senior management of significant complaint(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.3.1.b.1">
+            <ControlObjective>Suppliers must ensure there is a process for the rapid and effective management of...any significant Complaints or Complaint issues.</ControlObjective>
+            <LegalRepresentation>Notifying management: Suppliers must ensure there is a process for the rapid and effective management of, and notification to appropriately senior management of any significant Complaints or Complaint issues.</LegalRepresentation>
+            <FormalRepresentation>receive significant complaint(X) =&gt; [OAPNP]rapidly and effectively manage significant complaint(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.3.1.a.iii">
+            <ControlObjective>Suppliers must monitor and record process to address areas requiring attention (e.g. areas non-compliant with TCPC).</ControlObjective>
+            <LegalRepresentation>Identification of problems: Suppliers must implement processes, procedures or systems to identify and resolve recurring problems and systemic issues. Suppliers must: monitor and record progress to address areas requiring attention.</LegalRepresentation>
+            <FormalRepresentation>identify areas requiring attention(X) =&gt; [OAPNP]monitor and record progress to address areas requiring attention(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.3.1.a.ii.2">
+            <ControlObjective>Suppliers must address emerging issues identified from monitoring Complaints as soon as practicable.</ControlObjective>
+            <LegalRepresentation>Identification of problems: Suppliers must implement processes, procedures or systems to identify and resolve recurring problems and systemic issues. Suppliers must: monitor Complaints to identify emerging issues requiring specific attention and address those as soon as practicable</LegalRepresentation>
+            <FormalRepresentation>identify emerging issue(X) =&gt; [OAPP]address emerging issue as soon as practicable(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.3.1.a.ii.1">
+            <ControlObjective>Suppliers must monitor Complaints to identify emerging issues requiring specific attention...</ControlObjective>
+            <LegalRepresentation>Identification of problems: Suppliers must implement processes, procedures or systems to identify and resolve recurring problems and systemic issues. Suppliers must: monitor Complaints to identify emerging issues requiring specific attention and address those as soon as practicable.</LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPP]monitor Complaints to identify emerging issues requiring specific attention(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.3.1.a.i">
+            <ControlObjective>Suppliers must classify and analyse Complaints at least every 3 months to identify recurring problems and issues including areas of non-compliance with this Code.</ControlObjective>
+            <LegalRepresentation>A Supplier must take the following actions to enable this outcome: (a) Identification of problems: Suppliers must implement processes, procedures or systems to identify and resolve recurring problems and systemic issues. Suppliers must: (i) classify and analyse Complaints at least every 3 months to identify recurring problems and issues including areas of non-compliance with this Code; </LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPP]classify and analyse complaints at least every 3 months(X)</FormalRepresentation>
+        </Rule>
+    </Rules>
+    <SuperiorityRelations/>
+</RuleSet>

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RuleSet xmlns="http://www.nicta.com.au/bpc/CombinedRuleSetDefinition/0.1" description="Suppliers must provide Consumers with a Complaint handling process which is:&#xD;&#xA;(a)&#x9;accessible;&#xD;&#xA;(b)&#x9;transparent; and&#xD;&#xA;(c)&#x9;free of charge, other than as expressly provided for in this chapter;&#xD;&#xA;and which provides for the timely and fair Resolution of Complaints.&#xD;&#xA;" version="0.1" displayName="Telecommunication Consumer Protections Code C628.2012: Section 8.1: Provision of Complaint handling process that is accessible, transparent and free of charge" uri="TCPC/8.1/ProvisionOfComplaintHandlingProcess">
+    <Vocabulary>
+        <Term description="Supplier documents and provides access to their complaint handling process in different formats to suit customers with disabilities or form non-English speaking background." atom="provide special format description complaint handling process"/>
+        <Term description="Supplier ensures staff who have direct contact with Customers including contractors understand the complaint handling process and their responsibilities under it" atom="relevant staff aware complaint handling process"/>
+        <Term description="Supplier describes methods to make a complaint including how, when and where." atom="describe methods to lodge complaints"/>
+        <Term description="Supplier informs Customer of Complaint handling process." atom="inform complaint handling process"/>
+        <Term description="Supplier informs customer of right to make a complaint." atom="inform right to make complaint"/>
+        <Term description="Supplier informs Customer of procedure to discontinue a Complaint." atom="inform procedure discontinue complaint"/>
+        <Term description="Customer requests information about a complaint that was collected more than 2 years prior to the date of request." atom="information older than 2 years"/>
+        <Term description="Supplier's CEO (or equivalent) is responsible for ensuring complaint handling process is compliant with TCPC." atom="subject_CEO complying complaint handling process"/>
+        <Term description="Supplier terminates service of a Customer." atom="terminate service"/>
+        <Term description="The Supplier's CEO (or equivalent) is responsible for operation of the complaint handling process." atom="subject_CEO operation complaint handling process"/>
+        <Term description="Supplier charges for sending the complaint handling process documentation to the customer." atom="charge send description complaint handling process"/>
+        <Term description="The Supplier accepts any type of complaint and open a case to investigate the compliant" atom="accept complaint"/>
+        <Term description="Customer raises a complaint by calling a phone number provided by the Supplier using the Supplier's service." atom="call from supplier service"/>
+        <Term description="Customer accepts offer of proposed Resolution" atom="offer accepted"/>
+        <Term description="Supplier provides access to an internal prioritisation process to Consumers" atom="describe internal prioritisation"/>
+        <Term description="supplier's act of charging a particular activity" atom="charge for activity"/>
+        <Term description="Supplier has a complaint handling process as per TCPC section 8." atom="complaint handling process"/>
+        <Term description="Supplier acknowledges complaint by customer." atom="complaint acknowledgment"/>
+        <Term description="Supplier informs Customer of the procedure for paying for the charge for handling a Complaint." atom="inform payment procedure"/>
+        <Term description="Supplier ensures staff are able to identify and record a complaint in accordance to their complaint handling process." atom="relevant staff able to handle complaint"/>
+        <Term description="Supplier describes the timeframes for individual steps in the Complaints handling process to Customers." atom="describe timeframe individual steps"/>
+        <Term description="Supplier informs Customer of the procedure for continuing a complaint when the Customer requests non-standard information." atom="inform procedure for non standard information"/>
+        <Term description="Supplier informs customer of outcome of their complaint (i.e. after resolution)." atom="inform resolution"/>
+        <Term description="Supplier must report at least annually to the CEO (or equivalent) regarding compliance with its Complaint handling process." atom="send at least annual report to CEO"/>
+        <Term description="Supplier sends a hard copy of the complaint handling process to Customers." atom="send description complaint handling process"/>
+        <Term description="Customer raises a complaint via a phone number provided by the Supplier" atom="call from complaint number"/>
+        <Term description="Customer has raised a Complaint through external dispute resolution." atom="external dispute resolution"/>
+        <Term description="Supplier provides an internal prioritisation process for complaints that is clear and accessible to Customers." atom="provide internal prioritisation"/>
+        <Term description="Supplier provides easy to understand documentation of complaint handling process." atom="easy to understand description complaint handling process"/>
+        <Term description="Customer requests hard copy of complaint handling process" atom="customer requests hard copy"/>
+        <Term description="Customer's request for information about a complaint is deemed non-standard" atom="non standard information"/>
+        <Term description="Supplier's CEO (or equivalent) approves the Complaint handling process of the Supplier." atom="approved CEO"/>
+        <Term description="Supplier documents their complaint handling process and makes it available to staff, Consumers, former Customers and other stakeholders" atom="description complaint handling process"/>
+        <Term description="Supplier makes available on the web the description of their complaint handling process" atom="available on web description complaint handling process"/>
+        <Term description="Supplier concisely documents their complaint handling process." atom="concise description complaint handling process"/>
+        <Term description="Supplier sets out circumstances in which a Complaint will be treated as urgent. An urgent complaint is (a) one made by a customer who has applied for or has been accepted as being in Financial Hardship (b) about disconnection of a service that is imminent or has occurred and where due process has not been followed; (c) involves priority assistance customer and the service for which they are receiving Priority Assistance" atom="define urgent complaint"/>
+        <Term description="Supplier provides assistance to Customer with special needs to formulate and lodge Complaints if requested." atom="provide assistance customer with special needs"/>
+        <Term description="Supplier resolves a complaint" atom="resolution"/>
+        <Term description="Supplier provides access to its internal escalation process to customers." atom="describe internal escalation process"/>
+        <Term description="Supplier informs Customer of charge for raising a Complaint." atom="inform of charge"/>
+        <Term description="Senior manager at supplier is responsible for maintaining effective and efficient operation of complaint handling process." atom="subject_seniorManager effective operation complaint handling process"/>
+        <Term description="Supplier chooses to Resolve a Complaint commercially to the satisfaction of the Consumer." atom="commercial offer"/>
+        <Term description="Supplier informs customer of options for external dispute resolution." atom="inform external dispute resolution"/>
+        <Term description="Customer requests information about a complaint such as an update on its status." atom="request information"/>
+        <Term description="Supplier must report at least annually to the CEO proposals for improvement to the complaints handling process." atom="send at least annual proposal for improvement to CEO"/>
+        <Term description="Supplier CEO (or equivalent) is responsible for implementing complaint handling process" atom="implement complaint handling process"/>
+        <Term description="Supplier receives a complaint from a customer. A complaint is an expression of dissatisfaction made to a Supplier in relation to its Telecommunications Products or the complaints handling process itself, where a response or Resolution is explicitly or implicitly expected by the Consumer." atom="complaint"/>
+        <Term description="an activity/request done by a customer as part of a complaint" atom="consumer complaint activity"/>
+        <Term description="Supplier define procedure for handling urgent complaints." atom="define procedure for urgent complaint"/>
+        <Term description="Supplier must ensure quarterly reports are sent to senior management about compliance with TCPC section 8." atom="send quarterly report to senior management"/>
+        <Term description="Supplier has a complaint handling process that is consumer focused and easy to use." atom="consumer focused and easy to use"/>
+        <Term description="Supplier provides a phone number that Customers can call to raise complaints." atom="provide complaint number"/>
+        <Term description="Supplier investigates a Complaint." atom="investigate complaint"/>
+        <Term description="Supplier provides an internal escalation process which is clear and accessible to Consumers" atom="provide internal escalation process"/>
+        <Term description="Complaint is escalated for resolution." atom="escalation"/>
+        <Term description="Supplier provides a free or low cost phone number of raising Complaints." atom="free or low cost phone number"/>
+    </Vocabulary>
+    <Rules>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.d.ii">
+            <ControlObjective>Supplier must report at least quarterly to senior management about compliance with TCPC section 8.</ControlObjective>
+            <LegalRepresentation>Monitor and report: formally monitor and report (ii) on a quarterly basis to the Supplier’s senior management regarding the matters set out in this chapter</LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPNP]send quarterly report to senior management(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.d.i.2">
+            <ControlObjective>Supplier must report at least annually to the CEO (or equivalent) regarding opportunities for improvement to the complaints handling process.</ControlObjective>
+            <LegalRepresentation>Monitor and report: formally monitor and report (i) at least annually to the Chief Executive Officer (or equivalent) of the Supplier regarding its compliance with its Complaint handling process and opportunities for improvement </LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPNP]send at least annual proposal for improvement to CEO(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.d.i.1">
+            <ControlObjective>Supplier must report at least annually to the CEO (or equivalent) regarding compliance with its Complaint handling process.</ControlObjective>
+            <LegalRepresentation>Monitor and report: formally monitor and report (i) at least annually to the Chief Executive Officer (or equivalent) of the Supplier regarding its compliance with its Complaint handling process and opportunities for improvement </LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPNP]send at least annual report to CEO(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.c.2">
+            <ControlObjective>Supplier must ensure its staff including personnel working for contractors supplying Customer facing services to the Supplier are able to identify and record a Complaint;</ControlObjective>
+            <LegalRepresentation>Ensure staff awareness and visibility: ensure its staff including personnel working for contractors supplying Customer facing services to the Supplier are made aware of the Complaint handling process, their responsibilities under it and are able to identify and record a Complaint;</LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPP]relevant staff able to handle complaint(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.c.1">
+            <ControlObjective>Supplier must ensure its staff including personnel working for contractors supplying Customer facing services to the Supplier are made aware of the Complaint handling process and their responsibilities under it</ControlObjective>
+            <LegalRepresentation>Ensure staff awareness and visibility: ensure its staff including personnel working for contractors supplying Customer facing services to the Supplier are made aware of the Complaint handling process, their responsibilities under it and are able to identify and record a Complaint;</LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPP]relevant staff aware complaint handling process(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.b.vi">
+            <ControlObjective>Supplier must document and provide access to their complaint handling process in different formats to suit customers with disabilities or form non-English speaking background.</ControlObjective>
+            <LegalRepresentation>Document the process: document its Complaint handling process and make it available to staff, Consumers and other stakeholders in a summary form that is: (vi) in appropriate different formats, to ensure that that the Supplier meets the commitment to servicing the needs of Consumers or former Customers with disabilities and Consumers or former Customers from non-English speaking backgrounds in accordance with TCPC section 8.</LegalRepresentation>
+            <FormalRepresentation>description complaint handling process(X) =&gt; [OAPP]provide special format description complaint handling process(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.b.v">
+            <ControlObjective>Supplier must make documentation of their complaint handling process available on their website in a readily accessible position.</ControlObjective>
+            <LegalRepresentation>Document the process: document its Complaint handling process and make it available to staff, Consumers and other stakeholders in a summary form that is: (v) available in soft copy, which is in a readily accessible position on the Supplier's website</LegalRepresentation>
+            <FormalRepresentation>description complaint handling process(X) =&gt; [OAPP]available on web description complaint handling process(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.b.iv">
+            <ControlObjective>Suppliers must upon request from a Customer, send a hard copy of the complaint handling process documentation free of charge to the Customer.</ControlObjective>
+            <LegalRepresentation>Document the process: document its Complaint handling process and make it available to staff, Consumers and other stakeholders in a summary form that is: (iv) available in hard copy free of charge upon receipt of a request for a single copy from Consumers or former Customers who do not have easy access to the Internet</LegalRepresentation>
+            <FormalRepresentation>customer requests hard copy(X),description complaint handling process(X),-send description complaint handling process(X) =&gt; [OAPP]send description complaint handling process(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.b.iii">
+            <ControlObjective>Suppliers must provide access to complaint handling process documentation free of charge.</ControlObjective>
+            <LegalRepresentation>Document the process: document its Complaint handling process and make it available to staff, Consumers and other stakeholders in a summary form that is: (iii) free of charge</LegalRepresentation>
+            <FormalRepresentation>customer requests hard copy(X),description complaint handling process(X),-send description complaint handling process(X) =&gt; [OM]-charge send description complaint handling process(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.b.ii">
+            <ControlObjective>Supplier document its Complaint handling process and make it available to staff, Consumers and other stakeholders in a summary form that is easy to understand </ControlObjective>
+            <LegalRepresentation>Document the process: document its Complaint handling process and make it available to staff, Consumers and other stakeholders in a summary form that is (ii) easy to understand</LegalRepresentation>
+            <FormalRepresentation>description complaint handling process(X) =&gt; [OAPP]easy to understand description complaint handling process(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.b.i">
+            <ControlObjective>Supplier provides concise description of the complaint handling process.</ControlObjective>
+            <LegalRepresentation>Document the process: document its Complaint handling process and make it available to staff, Consumers and other stakeholders in a summary form that is: (i) concise</LegalRepresentation>
+            <FormalRepresentation>description complaint handling process(X) =&gt; [OAPP]concise description complaint handling process(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.b.aux">
+            <ControlObjective>Suppliers should not send a hard copy of their complaint handling process description to customers in an unsolicited manner.</ControlObjective>
+            <LegalRepresentation></LegalRepresentation>
+            <FormalRepresentation>=&gt; -send description complaint handling process(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.b">
+            <ControlObjective>Supplier documents its Complaint handling process and make it available to staff, Consumers and other stakeholders in a summary form</ControlObjective>
+            <LegalRepresentation>Document the process: document its Complaint handling process and make it available to staff, Consumers and other stakeholders in a summary form</LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPP]description complaint handling process(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.x.E">
+            <ControlObjective>The supplier must implement, operate and comply with a Complaint handling process that is transparent, including E. prohibiting a Supplier from cancelling a Consumer's Telecommunications Service only because, being unable to Resolve a Complaint with their Supplier, that Consumer pursued their options for external dispute resolution.</ControlObjective>
+            <LegalRepresentation>The supplier must implement, operate and comply with a Complaint handling process that is transparent, including E. prohibiting a Supplier from cancelling a Consumer's Telecommunications Service only because, being unable to Resolve a Complaint with their Supplier, that Consumer pursued their options for external dispute resolution.</LegalRepresentation>
+            <FormalRepresentation>complaint(X),external dispute resolution(X),-resolution(X) =&gt; [OM]-terminate service(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.x.D">
+            <ControlObjective>The supplier must implement, operate and comply with a Complaint handling process that is transparent, including requiring Consumers to be advised of the outcome of their Complaint</ControlObjective>
+            <LegalRepresentation>The supplier must implement, operate and comply with a Complaint handling process that is transparent, including requiring Consumers to be advised of the outcome of their Complaint</LegalRepresentation>
+            <FormalRepresentation>complaint(X),resolution(X) =&gt; [OAPNP]inform resolution(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.x.D.ex">
+            <ControlObjective>the supplier is permitted not to inform of the customer of the resolution if the supplier complied with 8.2.1.e in case of a no contact within the proposed timerframe</ControlObjective>
+            <LegalRepresentation></LegalRepresentation>
+            <FormalRepresentation>complied821e(X) =&gt; [P]-inform resolution(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.x.C">
+            <ControlObjective>The supplier must implement, operate and comply with a Complaint handling process that is transparent, including providing clear and accessible information about options for external dispute resolution including the TIO</ControlObjective>
+            <LegalRepresentation>The supplier must implement, operate and comply with a Complaint handling process that is transparent, including C. providing clear and accessible information about options for external dispute resolution including the TIO</LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPP]inform external dispute resolution(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.x.B.2">
+            <ControlObjective>The supplier must implement, operate and comply with a Complaint handling process that is transparent, including providing access to internal escalation process to Consumers</ControlObjective>
+            <LegalRepresentation>The supplier must implement, operate and comply with a Complaint handling process that is transparent, including B. providing an internal escalation process which is clear and accessible to Consumers</LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPP]describe internal escalation process(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.x.B.1">
+            <ControlObjective>The supplier must implement, operate and comply with a Complaint handling process that is transparent, including providing an internal escalation process</ControlObjective>
+            <LegalRepresentation>The supplier must implement, operate and comply with a Complaint handling process that is transparent, including B. providing an internal escalation process which is clear and accessible to Consumers</LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPP]provide internal escalation process(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.x.A.2">
+            <ControlObjective>The supplier must implement, operate and comply with a Complaint handling process that is transparent, including providing access to internal prioritisation process to Consumers</ControlObjective>
+            <LegalRepresentation>The supplier must implement, operate and comply with a Complaint handling process that is transparent, including A.	providing an internal prioritisation process which is clear and accessible to Consumers</LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPP]describe internal prioritisation(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.x.A.1">
+            <ControlObjective>The supplier must implement, operate and comply with a Complaint handling process that is transparent, including providing an internal prioritisation process</ControlObjective>
+            <LegalRepresentation>The supplier must implement, operate and comply with a Complaint handling process that is transparent, including A.	providing an internal prioritisation process which is clear and accessible to Consumers</LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPP]provide internal prioritisation(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.viii.AB">
+            <ControlObjective>The supplier must implement, operate and comply with a Complaint handling process that requires all Complaints to be: A. Resolved in an objective, efficient, and fair manner; and B. escalated and managed under the Supplier's internal escalation process if requested by the Consumer or a former Customer</ControlObjective>
+            <LegalRepresentation>The supplier must implement, operate and comply with a Complaint handling process that requires all Complaints to be: A. Resolved in an objective, efficient, and fair manner; and B. escalated and managed under the Supplier's internal escalation process if requested by the Consumer or a former Customer</LegalRepresentation>
+            <FormalRepresentation>complaint(X),complaint acknowledgment(X) =&gt; [OANPNP]resolution(X),[OAPP]escalation(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.viii.AB.2">
+            <ControlObjective>The supplier must implement, operate and comply with a Complaint handling process that requires all Complaints to be: A. Resolved in an objective, efficient, and fair manner; and B. escalated and managed under the Supplier's internal escalation process if requested by the Consumer or a former Customer.</ControlObjective>
+            <LegalRepresentation>The supplier must implement, operate and comply with a Complaint handling process that requires all Complaints to be: A. Resolved in an objective, efficient, and fair manner; and B. escalated and managed under the Supplier's internal escalation process if requested by the Consumer or a former Customer</LegalRepresentation>
+            <FormalRepresentation>no further assistance(X),-offer accepted(X) =&gt; [OANPNP]-resolution(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.vii.G.2">
+            <ControlObjective>The supplier must implement, operate and comply with a Complaint handling process that is accessible including how the management of Urgent Complaints differs from other Complaints.</ControlObjective>
+            <LegalRepresentation>The supplier must implement, operate and comply with a Complaint handling process that is accessible including setting out the circumstances in which a Complaint will be treated as urgent and how the management of Urgent Complaints differs from other Complaints;</LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPP]define procedure for urgent complaint(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.vii.G.1">
+            <ControlObjective>The supplier must implement, operate and comply with a Complaint handling process that is accessible including setting out the circumstances in which a Complaint will be treated as urgent.</ControlObjective>
+            <LegalRepresentation>The supplier must implement, operate and comply with a Complaint handling process that is accessible including setting out the circumstances in which a Complaint will be treated as urgent and how the management of Urgent Complaints differs from other Complaints;</LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPP]define urgent complaint(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.vii.E">
+            <ControlObjective>The supplier must implement, operate and comply with a Complaint handling process that is accessible including offering assistance to Consumers to formulate and lodge Complaints if requested;</ControlObjective>
+            <LegalRepresentation>The supplier must implement, operate and comply with a Complaint handling process that is accessible including offering assistance to Consumers to formulate and lodge Complaints if requested;</LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPP]provide assistance customer with special needs(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.vii.CDF">
+            <ControlObjective>The supplier must implement, operate and comply with a Complaint handling process that is accessible including allowing a Complaint to be made by  letter, telephone, fax, online or email; where a Supplier has retail operations, allowing a Complaint to be made in person in store; allowing Consumers to use an Authorised Representative and/or an Advocate to make a Complaint; </ControlObjective>
+            <LegalRepresentation>The supplier must implement, operate and comply with a Complaint handling process that is accessible including allowing a Complaint to be made by  letter, telephone, fax, online or email; where a Supplier has retail operations, allowing a Complaint to be made in person in store; allowing Consumers to use an Authorised Representative and/or an Advocate to make a Complaint; </LegalRepresentation>
+            <FormalRepresentation>complaint(X) =&gt; accept complaint(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.vii.B">
+            <ControlObjective>The supplier must implement, operate and comply with a Complaint handling process that is accessible including setting out how, when and where a Consumer can make a Complaint;</ControlObjective>
+            <LegalRepresentation>(vii) is accessible including: B.	setting out how, when and where a Consumer can make a Complaint;</LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPP]describe methods to lodge complaints(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.vii.A">
+            <ControlObjective>The supplier must implement, operate and comply with a Complaint handling process that is accessible including by provision of a free, local or low cost access number from the service provided by the Supplier</ControlObjective>
+            <LegalRepresentation>(vii) is accessible including: A. by provision of a free, local or low cost access number from the service provided by the Supplier; </LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X),provide complaint number(X) =&gt; [OAPP]free or low cost phone number(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.vii.a">
+            <ControlObjective>the supplier should provide number which is a free, local, or low cost when accessed from the service provided by the Supplier</ControlObjective>
+            <LegalRepresentation>8.1.1.vii.a</LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPP]provide complaint number(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.vi">
+            <ControlObjective>The supplier must implement, operate and comply with a Complaint handling process that sets out the response times for individual steps in the management of Complaints</ControlObjective>
+            <LegalRepresentation>(vi) sets out the response times for individual steps in the management of Complaints;</LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPP]describe timeframe individual steps(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.v.2">
+            <ControlObjective>The supplier must implement, operate and comply with a Complaint handling process that clearly states that a proposed Resolution must be accepted by a Consumer or former Customer before a Supplier is required to implement it.</ControlObjective>
+            <LegalRepresentation>(v) clearly states that Consumers or former Customers have a right to make a Complaint and that a proposed Resolution must be accepted by a Consumer or former Customer before a Supplier is required to implement it.</LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPP]inform complaint handling process(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.v.1">
+            <ControlObjective>The supplier must implement, operate and comply with a Complaint handling process that clearly states that Consumers or former Customers have a right to make a Complaint</ControlObjective>
+            <LegalRepresentation>(v) clearly states that Consumers or former Customers have a right to make a Complaint and that a proposed Resolution must be accepted by a Consumer or former Customer before a Supplier is required to implement it.</LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPP]inform right to make complaint(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.ix.2">
+            <ControlObjective>The supplier must implement, operate and comply with a Complaint handling process that provides for investigation of Complaints to an extent commensurate with the seriousness of the Complaint, while acknowledging that Suppliers may choose to Resolve a Complaint commercially to the satisfaction of the Consumer without an investigation;</ControlObjective>
+            <LegalRepresentation>The supplier must implement, operate and comply with a Complaint handling process that provides for investigation of Complaints to an extent commensurate with the seriousness of the Complaint, while acknowledging that Suppliers may choose to Resolve a Complaint commercially to the satisfaction of the Consumer without an investigation;</LegalRepresentation>
+            <FormalRepresentation>commercial offer(X),complaint(X),offer accepted(X) =&gt; [P]-investigate complaint(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.ix.1.meta">
+            <ControlObjective>The supplier must implement, operate and comply with a Complaint handling process that provides for investigation of Complaints to an extent commensurate with the seriousness of the Complaint, while acknowledging that Suppliers may choose to Resolve a Complaint commercially to the satisfaction of the Consumer without an investigation;</ControlObjective>
+            <LegalRepresentation>The supplier must implement, operate and comply with a Complaint handling process that provides for investigation of Complaints to an extent commensurate with the seriousness of the Complaint, while acknowledging that Suppliers may choose to Resolve a Complaint commercially to the satisfaction of the Consumer without an investigation;</LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPNP]investigate complaint(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.ix.1">
+            <ControlObjective>The supplier must implement, operate and comply with a Complaint handling process that provides for investigation of Complaints to an extent commensurate with the seriousness of the Complaint, while acknowledging that Suppliers may choose to Resolve a Complaint commercially to the satisfaction of the Consumer without an investigation;</ControlObjective>
+            <LegalRepresentation>The supplier must implement, operate and comply with a Complaint handling process that provides for investigation of Complaints to an extent commensurate with the seriousness of the Complaint, while acknowledging that Suppliers may choose to Resolve a Complaint commercially to the satisfaction of the Consumer without an investigation;</LegalRepresentation>
+            <FormalRepresentation>complaint(X) =&gt; [OAPNP]investigate complaint(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.ix.1.ex">
+            <ControlObjective>the supplier is permitted not to investigate a complaint if the supplier complied with 8.2.1.e in case of a no contact within the proposed timerframe</ControlObjective>
+            <LegalRepresentation></LegalRepresentation>
+            <FormalRepresentation>complied821e(X) =&gt; [P]-investigate complaint(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.iv">
+            <ControlObjective>A senior manager is responsible for the management and effectiveness of the complaint handling process </ControlObjective>
+            <LegalRepresentation>is under the direction of a senior manager who is responsible for maintaining its effective and efficient operation in accordance with the requirements of this chapter;</LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPNP]subject_seniorManager effective operation complaint handling process(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.iii.4">
+            <ControlObjective>The Supplier's CEO (or equivalent) is responsible for ensuring that the complaint handling process is compilant with TCPC</ControlObjective>
+            <LegalRepresentation>A Supplier must take the following actions to enable this outcome: Implement a process: implement and maintain a Complaint handling process that: is approved by, and provides that, the Chief Executive Officer (or equivalent) of the Supplier is responsible for ensuring its implementation and operation in accordance with the requirements of this chapter;</LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPNP]subject_CEO complying complaint handling process(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.iii.3">
+            <ControlObjective>The CEO of the Supplier (or equivalent) is responsible for the operation of the complaint handling process.</ControlObjective>
+            <LegalRepresentation>A Supplier must take the following actions to enable this outcome: Implement a process: implement and maintain a Complaint handling process that: is approved by, and provides that, the Chief Executive Officer (or equivalent) of the Supplier is responsible for ensuring its implementation and operation in accordance with the requirements of this chapter;</LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPNP]subject_CEO operation complaint handling process(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.iii.2">
+            <ControlObjective>The CEO (or equivalent) of the Supplier is responsible for the implementation of the complaint handling process.</ControlObjective>
+            <LegalRepresentation>A Supplier must take the following actions to enable this outcome: Implement a process: implement and maintain a Complaint handling process that: is approved by, and provides that, the Chief Executive Officer (or equivalent) of the Supplier is responsible for ensuring its implementation and operation in accordance with the requirements of this chapter;</LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPNP]implement complaint handling process(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.iii.1">
+            <ControlObjective>The Supplier's complaint handling process must be approved by the CEO (or equivalent)</ControlObjective>
+            <LegalRepresentation>A Supplier must take the following actions to enable this outcome: Implement a process: implement and maintain a Complaint handling process that: is approved by, and provides that, the Chief Executive Officer (or equivalent) of the Supplier is responsible for ensuring its implementation and operation in accordance with the requirements of this chapter;</LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPNP]approved CEO(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.ii.B.2">
+            <ControlObjective>The Supplier can charge for information that is &quot;inconsistent&quot; with information in Standard Form Customer Contract or Summary of Offer</ControlObjective>
+            <LegalRepresentation>the free provision of the information in the form or quantities requested is inconsistent with the Supplier’s Standard Form Customer Contract or the relevant summary of the Offer referred to in clause 4.1.2;</LegalRepresentation>
+            <FormalRepresentation>complaint(X),non standard information(X),request information(X) =&gt; [P]charge for activity(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.ii.B.1">
+            <ControlObjective>A Supplier must implement, operate and comply with a Complaint handling process that is free of charge other than for the provision of information that was collected more than 2 years prior to date of request.</ControlObjective>
+            <LegalRepresentation>8.1.1&#xD;
+A Supplier must take the following actions to enable this outcome:&#xD;
+(a) Implement a process: implement, operate and comply with a Complaint handling process that:&#xD;
+(ii) is free of charge, other than for:&#xD;
+B. the provision of information where:&#xD;
+• a Consumer or former Customer requests access to information held by the Supplier about the Consumer or former Customer which was collected by the Supplier more than 2 years prior to the date of the request; or</LegalRepresentation>
+            <FormalRepresentation>complaint(X),information older than 2 years(X),request information(X) =&gt; [P]charge for activity(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.ii.A">
+            <ControlObjective>A Supplier must implement, operate and comply with a Complaint handling process that is free of charge, other than for the call costs which may be free, local or at low cost when accessed from the service provided by the Supplier</ControlObjective>
+            <LegalRepresentation>A Supplier must take the following actions to enable this outcome:&#xD;
+(a) Implement a process: implement, operate and comply with a Complaint handling process that: (ii) is free of charge, other than for:&#xD;
+A. the call costs referred to in clause 8.1.1(a)(vii)A;</LegalRepresentation>
+            <FormalRepresentation>call from complaint number(X),call from supplier service(X),consumer complaint activity(X) =&gt; [P]charge for activity(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.ii.5">
+            <ControlObjective>In the event that the Supplier is permitted to charge for handling a complaint, The Supplier must inform the Consumer or former Customer of the options for external dispute resolution before levying any Charge under this paragraph.</ControlObjective>
+            <LegalRepresentation>A Supplier must take the following actions to enable this outcome: Implement a process: implement and maintain a Complaint handling process that: is free of charge, other than for the call costs referred to in clause 8.1.1(a)(vii)(A) and for the provision of information where: ...&#xD;
+in which circumstances, the Supplier may levy a reasonable charge provided that the Supplier must inform the Consumer of the proposed charge and notify the Consumer of the option to pursue the Complaint and pay the charge or to discontinue the Complaint.  The Supplier must tell the Consumer about the options for external dispute resolution before levying any Charge under this paragraph.</LegalRepresentation>
+            <FormalRepresentation>charge for activity(X),[P]charge for activity(X) =&gt; [OAPP]inform external dispute resolution(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.ii.4">
+            <ControlObjective>In the event that the Supplier is permitted to charge for handling a complaint, The Supplier must inform the Consumer or former Customer of the option to discontinue the Complaint.</ControlObjective>
+            <LegalRepresentation>A Supplier must take the following actions to enable this outcome: Implement a process: implement and maintain a Complaint handling process that: is free of charge, other than for the call costs referred to in clause 8.1.1(a)(vii)(A) and for the provision of information where: ...&#xD;
+in which circumstances, the Supplier may levy a reasonable charge provided that the Supplier must inform the Consumer of the proposed charge and notify the Consumer of the option to pursue the Complaint and pay the charge or to discontinue the Complaint.  The Supplier must tell the Consumer about the options for external dispute resolution before levying any Charge under this paragraph</LegalRepresentation>
+            <FormalRepresentation>[P]charge for activity(X) =&gt; [OAPNP]inform procedure discontinue complaint(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.ii.3">
+            <ControlObjective>In the event that the Supplier is permitted to charge for handling a complaint, The Supplier must inform the Consumer or former Customer of the option to pursue the Complaint and the procedure for payment of the charge.</ControlObjective>
+            <LegalRepresentation>A Supplier must take the following actions to enable this outcome: Implement a process: implement and maintain a Complaint handling process that: is free of charge, other than for the call costs referred to in clause 8.1.1(a)(vii)(A) and for the provision of information where: ...&#xD;
+in which circumstances, the Supplier may levy a reasonable charge provided that the Supplier must inform the Consumer of the proposed charge and notify the Consumer of the option to pursue the Complaint and pay the charge or to discontinue the Complaint.  The Supplier must tell the Consumer about the options for external dispute resolution before levying any Charge under this paragraph</LegalRepresentation>
+            <FormalRepresentation>[P]charge for activity(X) =&gt; [OAPP]inform payment procedure(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.ii.2">
+            <ControlObjective>In the event that the Supplier is permitted to charge for handling a complaint, The Supplier must inform the Consumer or former Customer of the option to pursue the Complaint</ControlObjective>
+            <LegalRepresentation>A Supplier must take the following actions to enable this outcome: Implement a process: implement and maintain a Complaint handling process that: is free of charge, other than for the call costs referred to in clause 8.1.1(a)(vii)(A) and for the provision of information where: ...&#xD;
+in which circumstances, the Supplier may levy a reasonable charge provided that the Supplier must inform the Consumer of the proposed charge and notify the Consumer of the option to pursue the Complaint and pay the charge or to discontinue the Complaint.  The Supplier must tell the Consumer about the options for external dispute resolution before levying any Charge under this paragraph</LegalRepresentation>
+            <FormalRepresentation>[P]charge for activity(X) =&gt; [OAPP]inform procedure for non standard information(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.ii.1">
+            <ControlObjective>If the supplier is entitled to charge for information about a Complaint, the supplier should inform the consumer of the charge.</ControlObjective>
+            <LegalRepresentation>The Supplier must inform the Consumer or former Customer of the proposed charge and notify the Consumer or former Customer of the option to pursue the Complaint and pay the charge or to discontinue the Complaint. The Supplier must tell the Consumer or former Customer about the options for external dispute resolution before levying any Charge under this paragraph.</LegalRepresentation>
+            <FormalRepresentation>[P]charge for activity(X) =&gt; [OAPP]inform of charge(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.ii">
+            <ControlObjective>A Supplier must implement, operate and comply with a Complaint handling process that is free of charge</ControlObjective>
+            <LegalRepresentation>8.1.1&#xD;
+A Supplier must take the following actions to enable this outcome:&#xD;
+(a) Implement a process: implement, operate and comply with a Complaint handling process that:&#xD;
+(i) is Consumer focused and easy to use;&#xD;
+(ii) is free of charge, other than for:&#xD;
+A. the call costs referred to in clause 8.1.1(a)(vii)A;&#xD;
+B. the provision of information where:&#xD;
+• a Consumer or former Customer requests access to information held by the Supplier about the Consumer or former Customer which was collected by the Supplier more than 2 years prior to the date of the request; or&#xD;
+• the free provision of the information in the form or quantities requested is inconsistent with the Supplier’s Standard Form Customer Contract or the relevant summary of the Offer referred to in clause 4.1.2;&#xD;
+in which circumstances, the Supplier may levy a charge to recover its costs. The Supplier must inform the Consumer or former Customer of the proposed charge and notify the Consumer or former Customer of the option to pursue the Complaint and pay the charge or to discontinue the Complaint. The Supplier must tell the Consumer or former Customer about the options for external dispute resolution before levying any Charge under this paragraph.</LegalRepresentation>
+            <FormalRepresentation>consumer complaint activity(X) =&gt; [OM]-charge for activity(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.i">
+            <ControlObjective>Supplier must implement and maintain a Complaint handling process that is Consumer focused and easy to use.</ControlObjective>
+            <LegalRepresentation>8.1.1&#xD;
+A Supplier must take the following actions to enable this outcome: Implement a process: implement and maintain a Complaint handling process that: is Consumer focused and easy to use</LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPP]consumer focused and easy to use(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.1.1.a.viii.AB.3">
+                    <ControlObjective>The supplier must implement, operate and comply with a Complaint handling process that requires all Complaints to be: A. Resolved in an objective, efficient, and fair manner; and B. escalated and managed under the Supplier's internal escalation process if requested by the Consumer or a former Customer.</ControlObjective>
+                    <LegalRepresentation>The supplier must implement, operate and comply with a Complaint handling process that requires all Complaints to be: A. Resolved in an objective, efficient, and fair manner; and B. escalated and managed under the Supplier's internal escalation process if requested by the Consumer or a former Customer</LegalRepresentation>
+                    <FormalRepresentation>no further assistance(X),-offer accepted(X),immediate resolution available(X) =&gt; [OANPNP]-immediate resolution(X)</FormalRepresentation>
+                </Rule>
+    </Rules>
+    <SuperiorityRelations>
+        <SuperiorityRelation inferiorRuleLabel="tcpc.8.1.1.a.ix.1" superiorRuleLabel="tcpc.8.1.1.a.ix.1.ex"/>
+        <SuperiorityRelation inferiorRuleLabel="tcpc.8.1.1.a.ix.1" superiorRuleLabel="tcpc.8.1.1.a.ix.2"/>
+        <SuperiorityRelation inferiorRuleLabel="tcpc.8.1.1.a.ii" superiorRuleLabel="tcpc.8.1.1.a.ii.B.2"/>
+        <SuperiorityRelation inferiorRuleLabel="tcpc.8.1.1.a.ii" superiorRuleLabel="tcpc.8.1.1.a.ii.B.1"/>
+        <SuperiorityRelation inferiorRuleLabel="tcpc.8.1.1.a.ii" superiorRuleLabel="tcpc.8.1.1.a.ii.A"/>
+        <SuperiorityRelation inferiorRuleLabel="tcpc.8.1.1.a.x.D" superiorRuleLabel="tcpc.8.1.1.a.x.D.ex"/>
+    </SuperiorityRelations>
+</RuleSet>

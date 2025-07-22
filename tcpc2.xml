@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RuleSet xmlns="http://www.nicta.com.au/bpc/CombinedRuleSetDefinition/0.1" description="Rules for section 2: Definitions and Interpretations" version="0.1" displayName="Telecommunication Consumer Protections Code C628.2012: Definitions" uri="TCPC/Definitions">
+    <Vocabulary>
+        <Term description="Customer's request for information about a complaint is deemed non-standard" atom="non standard information"/>
+        <Term description="Supplier applies outstanding credits to the Customer's account." atom="apply outstanding credits"/>
+        <Term description="to assemble the charges for a customer for a billing period" atom="assemble charges for period"/>
+        <Term description="Supplier provides unique reference number for a Complaint to the Customer." atom="provide complaintID"/>
+        <Term description="complaint by fax" atom="complaint by fax"/>
+        <Term description="Supplier resolves a complaint" atom="resolution"/>
+        <Term description="Supplier has offered a proposed Resolution to a Customer for their Complaint." atom="inform proposed resolution"/>
+        <Term description="Complaint relates to any aspect of content on the Customer's Bill" atom="content on bill"/>
+        <Term description="Customer is dissatisfied with progress of a Complaint." atom="customer dissatisfied progress"/>
+        <Term description="Supplier closes the complaint." atom="close case"/>
+        <Term description="Supplier receives formal complaint from a customer via email." atom="complaint by email"/>
+        <Term description="Supplier offers remedy to a Complaint to a Customer." atom="offer remedy"/>
+        <Term description="Supplier handles billing enquiry from Customer." atom="handle billing enquiry"/>
+        <Term description="The Supplier accepts any type of complaint and open a case to investigate the compliant" atom="accept complaint"/>
+        <Term description="to calculate the charges for a customer for a billing period" atom="calculate charges for period"/>
+        <Term description="Supplier receives a written complaint from a customer via post." atom="complaint by post"/>
+        <Term description="Customer requests information about a complaint such as an update on its status." atom="request information"/>
+        <Term description="Customer is dissatisfied with proposed Resolution by Supplier." atom="customer dissatisfied resolution"/>
+        <Term description="Supplier receives bill payment from Customer." atom="receive bill payment"/>
+        <Term description="Supplier receives a complaint in person." atom="complaint in person"/>
+        <Term description="Supplier receives a complaint from a customer. A complaint is an expression of dissatisfaction made to a Supplier in relation to its Telecommunications Products or the complaints handling process itself, where a response or Resolution is explicitly or implicitly expected by the Consumer." atom="complaint"/>
+        <Term description="Supplier resolves a complaint on first contact with the customer." atom="immediate resolution"/>
+        <Term description="Quantity of information requested by Customer exceeds quantity of information available in the Supplier's relevant Offer summary" atom="quantity exceed quantity in Offer summary"/>
+        <Term description="Customer raises complaint through an authorised delegate." atom="complaint by authorised delegate"/>
+        <Term description="an activity/request done by a customer as part of a complaint" atom="consumer complaint activity"/>
+        <Term description="Supplier provides an indicative timeframe for the Resolution of the Complaint" atom="provide indicative resolution timeframe"/>
+        <Term description="Supplier receives a complaint from a customer via phone." atom="complaint by phone"/>
+        <Term description="Supplier receipts payment made by Customer." atom="issue bill payment receipt"/>
+        <Term description="Customer is dissatisfied with the timeframe of the proposed Resolution from the Supplier." atom="customer dissatisfied timeframe"/>
+        <Term description="Supplier delivers bill to Customer's Billing Address via mail." atom="deliver bill to billing address"/>
+        <Term description="Supplier acknowledges a complaint within 2 working days" atom="complaint acknowledgment 2 working day"/>
+        <Term description="Quantity of information requested by Customer exceeds quantity of information available in the Supplier's Standard Form Customer Contract" atom="quantity exceed quantity in Standard Form Customer Contract"/>
+        <Term description="Customer requests internal escalation of a Complaint." atom="customer requests escalation"/>
+        <Term description="Supplier acknowledges complaint by customer." atom="complaint acknowledgment"/>
+        <Term description="means a Complaint made to a Supplier by a Customer about any aspect of the Customer’s Bill or the Supplier's Billing." atom="billing complaint"/>
+        <Term description="Supplier provides access to information as to how a Consumer can obtain details of the Supplier’s Complaint handling process" atom="provide access information complaint handling description"/>
+        <Term description="Form of information requested by Customer inconsistent with form of information available in the Supplier's Standard Form Customer Contract" atom="form of info different from form in Standard Form Customer Contract"/>
+        <Term description="Supplier acknowledges a complaint immediately e.g. acknowledgement during phone call when the Customer raises the complaint." atom="immediate complaint acknowledgment"/>
+        <Term description="Supplier applies discounts on charges to the Customer's account." atom="apply discounts on the charges"/>
+        <Term description="Form of information requested by Customer inconsistent with form of information available in the Supplier's relevant Offer summary" atom="form of info different from form in Offer summary"/>
+        <Term description="Supplier applies debits to charges on the Customer's account." atom="apply debits to charges"/>
+        <Term description="Supplier informs customer of proposed resolution within 15 days of receiving the complaint." atom="inform proposed resolution 15 days"/>
+        <Term description="Customer complaint relates to any aspect of the Supplier's Billing." atom="content on billing activity"/>
+        <Term description="Supplier calculates net payable amount for a Customer based on the Customer's account after applying outstanding debits, credits and discounts." atom="calculate net payable"/>
+        <Term description="Complaint is escalated for resolution." atom="escalation"/>
+        <Term description="Supplier offers a remedy to resolve a Complaint that has special circumstances." atom="offer remedy special circumstance"/>
+        <Term description="Supplier issues bill to Customer's Billing Address." atom="issue bill"/>
+        <Term description="one of the activity in the creation, delivering, enquiring about a bill" atom="billing activity"/>
+    </Vocabulary>
+    <Rules>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.resolution">
+            <ControlObjective>a resolution on first contact is a resolution</ControlObjective>
+            <LegalRepresentation></LegalRepresentation>
+            <FormalRepresentation>immediate resolution(X) =&gt; resolution(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.offer.2">
+            <ControlObjective>When the Supplier offers a remedy to resolve a Complaint that has special circumstances, this also means the Supplier informs the Customer of the proposed resolution.</ControlObjective>
+            <LegalRepresentation></LegalRepresentation>
+            <FormalRepresentation>offer remedy special circumstance(X) =&gt; inform proposed resolution(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.offer.1">
+            <ControlObjective>When a supplier offers a remedy to a complaint, this also means to inform the customer of the proposed resolution.</ControlObjective>
+            <LegalRepresentation></LegalRepresentation>
+            <FormalRepresentation>offer remedy(X) =&gt; inform proposed resolution(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.informProposedResolution">
+            <ControlObjective>Informing a customer of a proposed resolution within 15 days is informing the customer of a proposed resolution</ControlObjective>
+            <LegalRepresentation></LegalRepresentation>
+            <FormalRepresentation>inform proposed resolution 15 days(X) =&gt; inform proposed resolution(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.escalation">
+            <ControlObjective>When a Complaint has been internally escalated, this also means a Complaint has been escalated.</ControlObjective>
+            <LegalRepresentation></LegalRepresentation>
+            <FormalRepresentation>customer requests escalation(X) =&gt; escalation(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.complaintAcknowledgment">
+            <ControlObjective>If a complaint is acknowledged within 2 working days, the complaint is considered acknowledged.</ControlObjective>
+            <LegalRepresentation>If a complaint is acknowledged within 2 working days, the complaint is considered acknowledged.</LegalRepresentation>
+            <FormalRepresentation>complaint acknowledgment 2 working day(X) =&gt; complaint acknowledgment(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.complaint.6">
+            <ControlObjective>A complaint from an authorised delegate is deemed to be a complaint.</ControlObjective>
+            <LegalRepresentation></LegalRepresentation>
+            <FormalRepresentation>complaint by authorised delegate(X) =&gt; complaint(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.complaint.5">
+            <ControlObjective>a complaint sent by post is a complaint</ControlObjective>
+            <LegalRepresentation></LegalRepresentation>
+            <FormalRepresentation>complaint by post(X) =&gt; complaint(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.complaint.4">
+            <ControlObjective>a complaint by email is a complaint</ControlObjective>
+            <LegalRepresentation></LegalRepresentation>
+            <FormalRepresentation>complaint by email(X) =&gt; complaint(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.complaint.3">
+            <ControlObjective>a complaint by fax is a complaint</ControlObjective>
+            <LegalRepresentation></LegalRepresentation>
+            <FormalRepresentation>complaint by fax(X) =&gt; complaint(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.complaint.2">
+            <ControlObjective>a phone complaint is a complaint</ControlObjective>
+            <LegalRepresentation></LegalRepresentation>
+            <FormalRepresentation>complaint by phone(X) =&gt; complaint(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.complaint.1">
+            <ControlObjective>a compliant in person is a compliant</ControlObjective>
+            <LegalRepresentation></LegalRepresentation>
+            <FormalRepresentation>complaint in person(X) =&gt; complaint(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.billingComplaint.2">
+            <ControlObjective>A billing complaint means a Complaint made to a Supplier by a Customer the Supplier's Billing.</ControlObjective>
+            <LegalRepresentation>means a Complaint made to a Supplier by a Customer about any aspect of the Customer’s Bill or the Supplier's Billing.</LegalRepresentation>
+            <FormalRepresentation>complaint(X),content on billing activity(X) =&gt; billing complaint(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.billingComplaint.1">
+            <ControlObjective>A Billing Complaint means a Complaint made to a Supplier by a Customer about any aspect of the Customer’s Bill.</ControlObjective>
+            <LegalRepresentation>Billing Complaint&#xD;
+means a Complaint made to a Supplier by a Customer about any aspect of the Customer’s Bill or the Supplier's Billing.</LegalRepresentation>
+            <FormalRepresentation>complaint(X),content on bill(X) =&gt; billing complaint(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.billingActivity.e">
+            <ControlObjective>A Billing Activity includes receiving and receipting payments made by the Customer.</ControlObjective>
+            <LegalRepresentation>means any one, or a combination of, the following activities:&#xD;
+(a) calculating and assembling Charges incurred by a Customer during a Billing Period;&#xD;
+(b) applying any debits or credits outstanding or Discounts due against the Charges, and calculating the net amount payable by the Customer;&#xD;
+(c) issuing and delivering Bills to the Billing Address;&#xD;
+(d) handling Billing Enquiries; and&#xD;
+(e) receiving and receipting payments made by the Customer.</LegalRepresentation>
+            <FormalRepresentation>issue bill payment receipt(X),receive bill payment(X) =&gt; billing activity(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.billingActivity.d">
+            <ControlObjective>A Billing Activity includes handling Billing Enquiries;</ControlObjective>
+            <LegalRepresentation>Billing&#xD;
+means any one, or a combination of, the following activities:&#xD;
+(a) calculating and assembling Charges incurred by a Customer during a Billing Period;&#xD;
+(b) applying any debits or credits outstanding or Discounts due against the Charges, and calculating the net amount payable by the Customer;&#xD;
+(c) issuing and delivering Bills to the Billing Address;&#xD;
+(d) handling Billing Enquiries; and&#xD;
+(e) receiving and receipting payments made by the Customer.</LegalRepresentation>
+            <FormalRepresentation>handle billing enquiry(X) =&gt; billing activity(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.billingActivity.c">
+            <ControlObjective>A Billing Activity includes issuing and delivering Bills to the Billing Address;</ControlObjective>
+            <LegalRepresentation>Billing&#xD;
+means any one, or a combination of, the following activities:&#xD;
+(a) calculating and assembling Charges incurred by a Customer during a Billing Period;&#xD;
+(b) applying any debits or credits outstanding or Discounts due against the Charges, and calculating the net amount payable by the Customer;&#xD;
+(c) issuing and delivering Bills to the Billing Address;&#xD;
+(d) handling Billing Enquiries; and&#xD;
+(e) receiving and receipting payments made by the Customer.</LegalRepresentation>
+            <FormalRepresentation>deliver bill to billing address(X),issue bill(X) =&gt; billing activity(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.billingActivity.b">
+            <ControlObjective>A Billing Activity includes applying any debits or credits outstanding or Discounts due against the Charges, and calculating the net amount payable by the Customer;</ControlObjective>
+            <LegalRepresentation>Billing&#xD;
+means any one, or a combination of, the following activities:&#xD;
+(a) calculating and assembling Charges incurred by a Customer during a Billing Period;&#xD;
+(b) applying any debits or credits outstanding or Discounts due against the Charges, and calculating the net amount payable by the Customer;&#xD;
+(c) issuing and delivering Bills to the Billing Address;&#xD;
+(d) handling Billing Enquiries; and&#xD;
+(e) receiving and receipting payments made by the Customer.</LegalRepresentation>
+            <FormalRepresentation>apply debits to charges(X),apply discounts on the charges(X),apply outstanding credits(X),calculate net payable(X) =&gt; billing activity(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.billingActivity.a">
+            <ControlObjective>A Billing Activity includes calculating and assembling Charges incurred by a Customer during a Billing Period</ControlObjective>
+            <LegalRepresentation>means any one, or a combination of, the following activities:&#xD;
+(a) calculating and assembling Charges incurred by a Customer during a Billing Period;&#xD;
+(b) applying any debits or credits outstanding or Discounts due against the Charges, and calculating the net amount payable by the Customer;&#xD;
+(c) issuing and delivering Bills to the Billing Address;&#xD;
+(d) handling Billing Enquiries; and&#xD;
+(e) receiving and receipting payments made by the Customer.</LegalRepresentation>
+            <FormalRepresentation>assemble charges for period(X),calculate charges for period(X) =&gt; billing activity(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.ack.4">
+            <ControlObjective>an immediate acknowledgment of a Complaint is an acknowledgment</ControlObjective>
+            <LegalRepresentation></LegalRepresentation>
+            <FormalRepresentation>immediate complaint acknowledgment(X) =&gt; complaint acknowledgment(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.ack.3">
+            <ControlObjective>Acknowledging a Complaint means providing a Consumer with information as to how a Consumer can obtain details of the Supplier’s Complaint handling process</ControlObjective>
+            <LegalRepresentation>Acknowledging a Complaint&#xD;
+means providing a Consumer with:&#xD;
+(a) a unique reference number or such other means as will ensure the Supplier’s ability to subsequently identify the Complaint and its subject matter.&#xD;
+(b) an indicative timeframe for the Resolution of the Complaint;&#xD;
+(c) information as to how a Consumer can obtain details of the Supplier’s Complaint handling process as per 8.1.1.(b).</LegalRepresentation>
+            <FormalRepresentation>complaint acknowledgment(X) =&gt; provide access information complaint handling description(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.ack.2">
+            <ControlObjective>Acknowledging a Complaint means providing a Consumer with an indicative timeframe for the Resolution of the Complaint</ControlObjective>
+            <LegalRepresentation>Acknowledging a Complaint&#xD;
+means providing a Consumer with:&#xD;
+(a) a unique reference number or such other means as will ensure the Supplier’s ability to subsequently identify the Complaint and its subject matter.&#xD;
+(b) an indicative timeframe for the Resolution of the Complaint;&#xD;
+(c) information as to how a Consumer can obtain details of the Supplier’s Complaint handling process as per 8.1.1.(b).</LegalRepresentation>
+            <FormalRepresentation>complaint acknowledgment(X) =&gt; provide indicative resolution timeframe(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.ack.1">
+            <ControlObjective>Acknowledging a Complaint means providing a Consumer with a unique reference number or such other means as will ensure the Supplier’s ability to subsequently identify the Complaint and its subject matter.</ControlObjective>
+            <LegalRepresentation>Acknowledging a Complaint&#xD;
+means providing a Consumer with:&#xD;
+(a) a unique reference number or such other means as will ensure the Supplier’s ability to subsequently identify the Complaint and its subject matter.&#xD;
+(b) an indicative timeframe for the Resolution of the Complaint;&#xD;
+(c) information as to how a Consumer can obtain details of the Supplier’s Complaint handling process as per 8.1.1.(b).</LegalRepresentation>
+            <FormalRepresentation>complaint acknowledgment(X) =&gt; provide complaintID(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.accept.complaint">
+            <ControlObjective>accepting a complaint means that the compliant case is not closed</ControlObjective>
+            <LegalRepresentation></LegalRepresentation>
+            <FormalRepresentation>accept complaint(X) =&gt; -close case(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.8.2.1.c.3">
+            <ControlObjective>If a customer is dissatisfied with timeframe of resolution of a complaint, it is considered as an escalation.</ControlObjective>
+            <LegalRepresentation>Respond to dissatisfaction with timeframes: If a Consumer tells the Supplier that they are dissatisfied with the timeframes that apply to the management of a Complaint or seek to have a matter treated as urgent, the Supplier must tell the Consumer about the Supplier's internal prioritisation and internal escalation process. If, after internal prioritisation and internal escalation the Consumer remains dissatisfied, the Supplier must tell the Consumer of the options for external dispute resolution.</LegalRepresentation>
+            <FormalRepresentation>customer dissatisfied timeframe(X) =&gt; customer requests escalation(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.8.2.1.c.2">
+            <ControlObjective>If a customer is dissatisfied with resolution of a complaint, it is considered as an escalation.</ControlObjective>
+            <LegalRepresentation>Respond to dissatisfaction with progress or outcome: If a Consumer tells the Supplier that they are dissatisfied with the progress or outcome of a Complaint or asks about their options to pursue a Complaint further, the Supplier must tell them about:&#xD;
+(i)	the Supplier's internal escalation process; and&#xD;
+(ii)	the options for external dispute resolution including the TIO</LegalRepresentation>
+            <FormalRepresentation>customer dissatisfied resolution(X) =&gt; customer requests escalation(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.8.2.1.c.1">
+            <ControlObjective>If a customer is dissatisfied with progress on a complaint, it is considered as an escalation.</ControlObjective>
+            <LegalRepresentation>Respond to dissatisfaction with timeframes: If a Consumer tells the Supplier that they are dissatisfied with the timeframes that apply to the management of a Complaint or seek to have a matter treated as urgent, the Supplier must tell the Consumer about the Supplier's internal prioritisation and internal escalation process. If, after internal prioritisation and internal escalation the Consumer remains dissatisfied, the Supplier must tell the Consumer of the options for external dispute resolution.</LegalRepresentation>
+            <FormalRepresentation>customer dissatisfied progress(X) =&gt; customer requests escalation(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.8.1.1.e">
+            <ControlObjective>A non-standard request for information is one where the form of information requested is inconsistent with the Supplier's Standard Form Customer Contract.</ControlObjective>
+            <LegalRepresentation>the free provision of the information in the form or quantities requested is inconsistent with the Supplier’s Standard Form Customer Contract or the relevant summary of the Offer referred to in clause 4.1.2;</LegalRepresentation>
+            <FormalRepresentation>form of info different from form in Standard Form Customer Contract(X) =&gt; non standard information(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.8.1.1.d">
+            <ControlObjective>A non-standard request for information is one where the form of information requested is inconsistent with the Supplier's relevant summary of the Offer.</ControlObjective>
+            <LegalRepresentation>the free provision of the information in the form or quantities requested is inconsistent with the Supplier’s Standard Form Customer Contract or the relevant summary of the Offer referred to in clause 4.1.2;</LegalRepresentation>
+            <FormalRepresentation>form of info different from form in Offer summary(X) =&gt; non standard information(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.8.1.1.c">
+            <ControlObjective>A non-standard request for information is one where the quantity of information requested is inconsistent with the Supplier's relevant summary of the Offer.</ControlObjective>
+            <LegalRepresentation>the free provision of the information in the form or quantities requested is inconsistent with the Supplier’s Standard Form Customer Contract or the relevant summary of the Offer referred to in clause 4.1.2;</LegalRepresentation>
+            <FormalRepresentation>quantity exceed quantity in Offer summary(X) =&gt; non standard information(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.8.1.1.b">
+            <ControlObjective>A non-standard request for information is one where the quantity of information requested is inconsistent with the Supplier's Standard Form Customer Contract.</ControlObjective>
+            <LegalRepresentation>the free provision of the information in the form or quantities requested is inconsistent with the Supplier’s Standard Form Customer Contract or the relevant summary of the Offer referred to in clause 4.1.2;</LegalRepresentation>
+            <FormalRepresentation>quantity exceed quantity in Standard Form Customer Contract(X) =&gt; non standard information(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="def.8.1.1.a">
+            <ControlObjective>If a Customer requests information about a Complaint, it is deemed a consumer complaint activity </ControlObjective>
+            <LegalRepresentation>This is a &quot;common sense&quot; auxiliary rule</LegalRepresentation>
+            <FormalRepresentation>complaint(X),request information(X) =&gt; consumer complaint activity(X)</FormalRepresentation>
+        </Rule>
+    </Rules>
+    <SuperiorityRelations/>
+</RuleSet>

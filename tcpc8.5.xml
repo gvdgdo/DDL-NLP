@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RuleSet xmlns="http://www.nicta.com.au/bpc/CombinedRuleSetDefinition/0.1" description="Suppliers must keep records of Complaints which:&#xD;&#xA;(a)&#x9;include identification of the Consumer making the Complaint, the nature of the Complaint, the steps taken to address the Complaint and the Resolution, if any of the Complaint; and&#xD;&#xA;(b)&#x9;enable the Supplier to manage, monitor, analyse, record and report on Complaints." version="0.1" displayName="Telecommunication Consumer Protections Code C628.2012: Section 8.5: Record Keeping" uri="TCPC/8.5/ComplaintsRecordKeeping">
+    <Vocabulary>
+        <Term description="Record the outcome of any investigation." atom="record outcome investigation"/>
+        <Term description="Record the Supplier's reasons for proposing its Resolution." atom="record reason for offered proposed resolution"/>
+        <Term description="Supplier discloses personal information recorded as part of a complaint." atom="disclose information"/>
+        <Term description="Record any required actions that are part of a proposed Resolution to a Complaint." atom="record required action"/>
+        <Term description="Supplier resolves a complaint" atom="resolution"/>
+        <Term description="Supplier has offered a proposed Resolution to a Customer for their Complaint." atom="inform proposed resolution"/>
+        <Term description="Record the underlying cause of the Complaint (i.e. it's nature)." atom="record complaint cause"/>
+        <Term description="Supplier keeps Complaints records for at least 2 years" atom="keep records 2 years"/>
+        <Term description="Record any associated commitment to the Customer that is part of a proposed Resolution of a Complaint." atom="record commitment to customer"/>
+        <Term description="Consumer has given express consent for the Supplier to disclose personal information in a Complaint to another party." atom="consent disclosure personal information"/>
+        <Term description="Commitment was made to a Customer as part of a proposed Resolution to a Complaint." atom="made commitment to customer"/>
+        <Term description="Complaint has been investigated." atom="investigated"/>
+        <Term description="Record resolutions requested by the customer." atom="record resolution sought"/>
+        <Term description="Supplier received request for personal information from TIO about a Complaint." atom="request from TIO"/>
+        <Term description="Supplier receives a complaint from a customer. A complaint is an expression of dissatisfaction made to a Supplier in relation to its Telecommunications Products or the complaints handling process itself, where a response or Resolution is explicitly or implicitly expected by the Consumer." atom="complaint"/>
+        <Term description="Record a unique reference number for the complaint." atom="record complaint ID"/>
+        <Term description="Record the due date for a response to a Complaint." atom="record due date"/>
+        <Term description="Supplier monitors progress of any commitments made to the Consumer or former Customer in relation to a Complaint." atom="monitor progress commitment"/>
+        <Term description="Supplier has a complaint handling process as per TCPC section 8." atom="complaint handling process"/>
+        <Term description="There has been correspondence with the customer." atom="correspondence with customer"/>
+        <Term description="Supplier acknowledges complaint by customer." atom="complaint acknowledgment"/>
+        <Term description="Supplier is able to report compliance with Complaints management timeframes set out in TCPC section 8.2.1 based on Complaints records." atom="enable report on records"/>
+        <Term description="Record the date when a proposed Resolution was communicated to the Consumer or former Customer." atom="record date offered proposed resolution"/>
+        <Term description="Record any correspondence sent by or to the customer." atom="record correspondence with customer"/>
+        <Term description="Supplier has complied with TCPC clause 8.2.1.e in attempting to contact the customer about their complaint." atom="complied821e"/>
+        <Term description="Record the Consumer's or former Customer's response to the proposed Resolution of the Complaint, and any reasons given by the Consumer or former Customer." atom="record customer response"/>
+        <Term description="Received Consumer's or former Customer's response to a proposed Resolution." atom="customer response"/>
+        <Term description="Supplier is subject to the Privacy Act." atom="subject Privacy Act"/>
+        <Term description="Record customer issues raised as part of a complaint." atom="record complaint issue"/>
+        <Term description="Supplier monitors progress of a Complaint." atom="monitor progress complaint"/>
+        <Term description="Personal information has been recorded as part of a complaint." atom="personal information"/>
+        <Term description="Record the proposed Resolution of a Complaint." atom="record proposed resolution"/>
+        <Term description="Record that the Consumer or former Customer requested the proposed Resolution in writing." atom="record requested written proposal"/>
+        <Term description="Customer requested the proposed Resolution in writing." atom="customer requested written proposal"/>
+    </Vocabulary>
+    <Rules>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.5.1.e.3">
+            <ControlObjective>Suppliers not subject to the requirements of the Privacy Act must ensure personal information concerning a Complaint is not disclosed except ... with the express consent of the Consumer.</ControlObjective>
+            <LegalRepresentation>Maintain confidentiality: Suppliers not subject to the requirements of the Privacy Act must ensure personal information concerning a Complaint is not disclosed except ... with the express consent of the Consumer.</LegalRepresentation>
+            <FormalRepresentation>consent disclosure personal information(X) =&gt; [P]disclose information(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.5.1.e.2">
+            <ControlObjective>Suppliers not subject to the requirements of the Privacy Act must ensure personal information concerning a Complaint is not disclosed except as required to manage a Complaint with the TIO...</ControlObjective>
+            <LegalRepresentation>Maintain confidentiality: Suppliers not subject to the requirements of the Privacy Act must ensure personal information concerning a Complaint is not disclosed except as required to manage a Complaint with the TIO...</LegalRepresentation>
+            <FormalRepresentation>personal information(X),request from TIO(X) =&gt; [OAPNP]disclose information(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.5.1.e.1">
+            <ControlObjective>Suppliers not subject to the requirements of the Privacy Act must ensure personal information concerning a Complaint is not disclosed...</ControlObjective>
+            <LegalRepresentation>Maintain confidentiality: Suppliers not subject to the requirements of the Privacy Act must ensure personal information concerning a Complaint is not disclosed...</LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X),personal information(X),-subject Privacy Act(X) =&gt; [OM]-disclose information(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.5.1.d">
+            <ControlObjective>Supplier must retain complaints records for at least two years without limiting the Supplier's obligations at law, including under the Privacy Act.</ControlObjective>
+            <LegalRepresentation>Record retention: without limiting the Supplier's obligations at law, including under the Privacy Act, retain this information for at least two years;</LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPP]keep records 2 years(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.5.1.c">
+            <ControlObjective>Suppliers must be able to report compliance with the Complaints management timeframes set out in clause 8.2.1 in the TCPC.</ControlObjective>
+            <LegalRepresentation>Enable reporting: be able to report compliance with the Complaints management timeframes set out in clause 8.2.1 above;</LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPP]enable report on records(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.5.1.b.2">
+            <ControlObjective>Suppliers must monitor the progress of any commitments made to the Consumer.</ControlObjective>
+            <LegalRepresentation>Monitor progress: Suppliers must monitor the progress of ... any commitments made to the Consumer or former Customer in relation to a Complaint;</LegalRepresentation>
+            <FormalRepresentation>complaint(X),made commitment to customer(X) =&gt; [OM]monitor progress commitment(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.5.1.b.1">
+            <ControlObjective>Suppliers must monitor the progress of a Complaint.</ControlObjective>
+            <LegalRepresentation>Monitor progress: Suppliers must monitor the progress of a Complaint...</LegalRepresentation>
+            <FormalRepresentation>complaint(X),complaint acknowledgment(X) =&gt; [OM]monitor progress complaint(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.5.1.a.xi">
+            <ControlObjective>Suppliers must keep records of Complaints systematically including copies of any correspondence sent by or to the Consumer.</ControlObjective>
+            <LegalRepresentation>Systematic record keeping: make and keep systematic records of Complaints including: (xi) copies of any correspondence sent by or to the Consumer.</LegalRepresentation>
+            <FormalRepresentation>complaint(X),correspondence with customer(X) =&gt; [OAPNP]record correspondence with customer(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.5.1.a.x">
+            <ControlObjective>Suppliers must keep records of Complaints systematically including the underlying cause of the Complaint (or nature of the Complaint).</ControlObjective>
+            <LegalRepresentation>Systematic record keeping: make and keep systematic records of Complaints including: (x) the underlying cause of the Complaint;</LegalRepresentation>
+            <FormalRepresentation>complaint(X),investigated(X) =&gt; [OAPNP]record complaint cause(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.5.1.a.viii.2">
+            <ControlObjective>Suppliers must keep records of Complaints systematically including whether the Consumer or former Customer requested a proposed Resolution in writing.</ControlObjective>
+            <LegalRepresentation>Systematic record keeping: make and keep systematic records of Complaints including: (viii) ... and if they have requested the Resolution in writing, that this request has been made;</LegalRepresentation>
+            <FormalRepresentation>complaint(X),customer requested written proposal(X) =&gt; [OAPNP]record requested written proposal(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.5.1.a.viii.1">
+            <ControlObjective>Suppliers must keep records of Complaints systematically including the Consumer's or former Customer's response to the proposed Resolution of the Complaint, any reasons given by the Consumer or former Customer,...</ControlObjective>
+            <LegalRepresentation>Systematic record keeping: make and keep systematic records of Complaints including: (viii) the Consumer's or former Customer's response to the proposed Resolution of the Complaint, any reasons given by the Consumer or former Customer...;</LegalRepresentation>
+            <FormalRepresentation>complaint(X),customer response(X),inform proposed resolution(X) =&gt; [OAPNP]record customer response(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.5.1.a.vii">
+            <ControlObjective>Suppliers must keep records of Complaints systematically including the Supplier's reasons for proposing its Resolution;</ControlObjective>
+            <LegalRepresentation>Systematic record keeping: make and keep systematic records of Complaints including: (vii) the Supplier's reasons for proposing its Resolution;</LegalRepresentation>
+            <FormalRepresentation>complaint(X),inform proposed resolution(X) =&gt; [OAPP]record reason for offered proposed resolution(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.5.1.a.vi.3">
+            <ControlObjective>Suppliers must keep records of Complaints systematically including the proposed Resolution of the Complaint including any associated commitments.</ControlObjective>
+            <LegalRepresentation>Systematic record keeping: make and keep systematic records of Complaints including: (vi) the proposed Resolution of the Complaint including any associated commitments...;</LegalRepresentation>
+            <FormalRepresentation>complaint(X),made commitment to customer(X) =&gt; [OAPNP]record commitment to customer(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.5.1.a.vi.2">
+            <ControlObjective>Suppliers must keep records of Complaints systematically including the proposed Resolution of the Complaint including the date this is communicated to the Consumer or former Customer.</ControlObjective>
+            <LegalRepresentation>Systematic record keeping: make and keep systematic records of Complaints including: (vi) the proposed Resolution of the Complaint including...the date this is communicated to the Consumer or former Customer;</LegalRepresentation>
+            <FormalRepresentation>complaint(X),inform proposed resolution(X) =&gt; [OAPNP]record date offered proposed resolution(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.5.1.a.vi.1">
+            <ControlObjective>Suppliers must keep records of Complaints systematically including the proposed Resolution of the Complaint.</ControlObjective>
+            <LegalRepresentation>Systematic record keeping: make and keep systematic records of Complaints including: (vi) the proposed Resolution of the Complaint ...</LegalRepresentation>
+            <FormalRepresentation>complaint(X),inform proposed resolution(X) =&gt; [OAPP]record proposed resolution(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.5.1.a.v">
+            <ControlObjective>Suppliers must keep records of Complaints systematically including the results of any investigation.</ControlObjective>
+            <LegalRepresentation>Systematic record keeping: make and keep systematic records of Complaints including: (v) the results of any investigation;</LegalRepresentation>
+            <FormalRepresentation>complaint(X),investigated(X) =&gt; [OAPNP]record outcome investigation(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.5.1.a.ix.ex">
+            <ControlObjective>The supplier is permitted not to record the required actions if the supplier complied with clause 8.2.1.e in case of a no contact within the proposed timeframe</ControlObjective>
+            <LegalRepresentation></LegalRepresentation>
+            <FormalRepresentation>complied821e(X) =&gt; [P]-record required action(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.5.1.a.ix">
+            <ControlObjective>Suppliers must keep records of Complaints systematically including the implementation of any required actions.</ControlObjective>
+            <LegalRepresentation>Systematic record keeping: make and keep systematic records of Complaints including: (ix) the implementation of any required actions;</LegalRepresentation>
+            <FormalRepresentation>complaint(X),resolution(X) =&gt; [OAPP]record required action(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.5.1.a.iv">
+            <ControlObjective>Suppliers must keep records of Complaints systematically including the due date for a response.</ControlObjective>
+            <LegalRepresentation>Systematic record keeping: make and keep systematic records of Complaints including: (iv) the due date for a response;</LegalRepresentation>
+            <FormalRepresentation>complaint(X) =&gt; [OAPNP]record due date(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.5.1.a.iii">
+            <ControlObjective>Suppliers must keep records of Complaints systematically including the requested Resolution from the Customer.</ControlObjective>
+            <LegalRepresentation>Systematic record keeping: make and keep systematic records of Complaints including: (iii) the requested Resolution;</LegalRepresentation>
+            <FormalRepresentation>complaint(X) =&gt; [OAPNP]record resolution sought(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.5.1.a.ii">
+            <ControlObjective>Suppliers must keep records of Complaints systematically including the issues raised as part of the Complaint.</ControlObjective>
+            <LegalRepresentation>Systematic record keeping: make and keep systematic records of Complaints including: (ii) the issues raised as part of the Complaint;</LegalRepresentation>
+            <FormalRepresentation>complaint(X) =&gt; [OAPNP]record complaint issue(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.5.1.a.i">
+            <ControlObjective>Suppliers must keep records of Complaints systematically including a unique reference number or such other means as will ensure the Supplier’s ability to subsequently identify the Complaint and its subject matter.</ControlObjective>
+            <LegalRepresentation>Systematic record keeping: make and keep systematic records of Complaints including: (i) a unique reference number or such other means as will ensure the Supplier’s ability to subsequently identify the Complaint and its subject matter;</LegalRepresentation>
+            <FormalRepresentation>complaint(X) =&gt; [OAPNP]record complaint ID(X)</FormalRepresentation>
+        </Rule>
+    </Rules>
+    <SuperiorityRelations>
+        <SuperiorityRelation inferiorRuleLabel="tcpc.8.5.1.a.ix" superiorRuleLabel="tcpc.8.5.1.a.ix.ex"/>
+        <SuperiorityRelation inferiorRuleLabel="tcpc.8.5.1.e.1" superiorRuleLabel="tcpc.8.5.1.e.3"/>
+        <SuperiorityRelation inferiorRuleLabel="tcpc.8.5.1.e.1" superiorRuleLabel="tcpc.8.5.1.e.2"/>
+    </SuperiorityRelations>
+</RuleSet>

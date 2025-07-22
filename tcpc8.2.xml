@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RuleSet xmlns="http://www.nicta.com.au/bpc/CombinedRuleSetDefinition/0.1" description="Consumers who make a Complaint to a Supplier will be treated with fairness and courtesy, and their Complaint will be dealt with objectively and efficiently by the Supplier." version="0.1" displayName="Telecommunication Consumer Protections Code C628.2012: Section 8.2: Complaint Management" uri="TCPC/8.2/ComplaintManagement">
+    <Vocabulary>
+        <Term description="Supplier believes complaint can be resolved within 25 working days of acknowledging the complaint." atom="resolvable 25 days"/>
+        <Term description="Customer advises Supplier of their special circumstance that may affect handling of their Complaint." atom="customer advise special circumstance"/>
+        <Term description="Customer raised credit-related complaint" atom="topic of complaint is on credit"/>
+        <Term description="Supplier provides confirmation of resolution in written form within 5 days of closing the complaint" atom="provide confirmation resolution 5 days"/>
+        <Term description="Supplier writes to customer at their last known address, stating that they were unable to contact them." atom="send written no contact message"/>
+        <Term description="Supplier has offered a proposed Resolution to a Customer for their Complaint." atom="inform proposed resolution"/>
+        <Term description="Supplier provides written document informing customer of reasons Supplier is not proceeding to resolve the complaint." atom="inform reasons not to proceed"/>
+        <Term description="Customer is dissatisfied with progress of a Complaint." atom="customer dissatisfied progress"/>
+        <Term description="Supplier has informed customer of internal escalation process." atom="inform internal escalation process"/>
+        <Term description="Supplier closes the complaint." atom="close case"/>
+        <Term description="Supplier offers remedy to a Complaint to a Customer." atom="offer remedy"/>
+        <Term description="Supplier implements a remedy for a general problem indicated by a complaint." atom="implement remedy for general problem"/>
+        <Term description="Supplier has delay in resolving a complaint" atom="delay in resolution"/>
+        <Term description="Customer directly contacts staff via telephone to raise a complaint (i.e. does not need to leave a message)." atom="contact staff"/>
+        <Term description="Customer is dissatisfied with proposed Resolution by Supplier." atom="customer dissatisfied resolution"/>
+        <Term description="Supplier informs customer of delays to promised timeframes." atom="inform delay"/>
+        <Term description="Customer raises complaint that is indicative of a wider general problem." atom="complaint topic indicative of general problem"/>
+        <Term description="Supplier sends invitation to customer to contact supplier with a timeframe of greater than 10 days for contact." atom="send invitation with timeframe greater than 10 days"/>
+        <Term description="Customer accepts offer of proposed Resolution" atom="offer accepted"/>
+        <Term description="Supplier informs customer of its internal prioritisation process for complaints." atom="inform internal prioritisation"/>
+        <Term description="Supplier fixes error in the current billing period" atom="fix error current billing period"/>
+        <Term description="staff are aware of potential remedies available to resolve a complaint" atom="aware possible resolution"/>
+        <Term description="Supplier implements resolution within 2 working days of receiving the complaint." atom="implement resolution 2 days"/>
+        <Term description="Supplier and Customer agree on a resolution date different to the standard 10 working days after acceptance of proposed resolution." atom="agreed custom resolution date"/>
+        <Term description="Supplier informs customer of timeframe for resolution of complaint." atom="inform timeframe for resolution"/>
+        <Term description="Supplier identifies an immediate resolution is available for a complaint." atom="immediate resolution available"/>
+        <Term description="Supplier chooses not to deal with the customer any more." atom="no further assistance"/>
+        <Term description="Supplier acknowledges complaint by customer." atom="complaint acknowledgment"/>
+        <Term description="Remedy exists for the root cause of a Complaint." atom="remedy for topic"/>
+        <Term description="Remedy exists for complaints where the customer has a special circumstance." atom="remedy for special circumstance"/>
+        <Term description="means a Complaint made to a Supplier by a Customer about any aspect of the Customer’s Bill or the Supplier's Billing." atom="billing complaint"/>
+        <Term description="Supplier notified customer of outcome of complaint less than 7 days ago" atom="notification sent less than 7 days"/>
+        <Term description="Customer raises a complaint via a phone number provided by the Supplier" atom="call from complaint number"/>
+        <Term description="Customer asks to pursue complaint further with Supplier." atom="customer asks pursue complaint further"/>
+        <Term description="Supplier offers a remedy to resolve a Complaint that has special circumstances." atom="offer remedy special circumstance"/>
+        <Term description="Supplier deems a complaint frivolous or vexatious" atom="frivolous or vexatious"/>
+        <Term description="Supplier resolves complaint by the agreed upon custom resolution date." atom="resolve by custom date"/>
+        <Term description="Supplier provides a means for the customer to monitor progress of a Complaint." atom="customer monitor progress"/>
+        <Term description="Supplier sends a list of contact attempts to the customer as part of the written 'no contact' message." atom="send list of contact attempts"/>
+        <Term description="Supplier initiates legal proceedings to resolve a Complaint." atom="initiate legal proceedings"/>
+        <Term description="Supplier resolves a complaint" atom="resolution"/>
+        <Term description="Supplier can resolve complaint within 2 working days." atom="resolvable 2 days"/>
+        <Term description="Supplier has not been able to contact customer about their complaint." atom="no contact"/>
+        <Term description="Customer requests written confirmation of resolution when complaint is closed." atom="customer request confirmation of resolution"/>
+        <Term description="Supplier informs customer of options for external dispute resolution." atom="inform external dispute resolution"/>
+        <Term description="Supplier completes all necessary actions to resolve complaint within 10 working days of the customer's acceptance of the resolution" atom="resolve 10 days"/>
+        <Term description="Complaint has been investigated." atom="investigated"/>
+        <Term description="Supplier has identified billing error has cause of complaint." atom="billing error"/>
+        <Term description="Supplier receives a complaint in person." atom="complaint in person"/>
+        <Term description="Supplier resolves a complaint on first contact with the customer." atom="immediate resolution"/>
+        <Term description="Supplier receives a complaint from a customer. A complaint is an expression of dissatisfaction made to a Supplier in relation to its Telecommunications Products or the complaints handling process itself, where a response or Resolution is explicitly or implicitly expected by the Consumer." atom="complaint"/>
+        <Term description="Supplier checks if the complaint is urgent as defined in TCPC." atom="check if urgent complaint"/>
+        <Term description="Supplier is waiting on a customer to perform actions before a complaint can be resolved." atom="pending customer action"/>
+        <Term description="Customer is satisfied with resolution" atom="customer satisfaction"/>
+        <Term description="Customer is dissatisfied with the timeframe of the proposed Resolution from the Supplier." atom="customer dissatisfied timeframe"/>
+        <Term description="Supplier identifies complaint as urgent" atom="urgent"/>
+        <Term description="Supplier identifies root cause of a complaint affects a large number of customers." atom="declare mass disruption"/>
+        <Term description="staff in charge of complaint /&#xD;&#xA;technical staff" atom="relevant staff"/>
+        <Term description="Supplier acknowledges a complaint within 2 working days" atom="complaint acknowledgment 2 working day"/>
+        <Term description="Supplier checks for a resolution to the complaint during first contact with the customer." atom="check immediate resolution"/>
+        <Term description="Customer raises complaint with a root cause that needs to be rectified." atom="complaint on topic"/>
+        <Term description="Customer agrees that the complaint can be closed." atom="customer consent close case"/>
+        <Term description="Supplier believes complaint can be resolved within 15 working days." atom="resolvable 15 days"/>
+        <Term description="A remedy exists for a general problem highlighted by a complaint." atom="remedy for general problem"/>
+        <Term description="Supplier has complied with TCPC clause 8.2.1.e in attempting to contact the customer about their complaint." atom="complied821e"/>
+        <Term description="Supplier performs credit management action, which may include Supplier assisting customer to manage their expenditure on telecommunication services, manage credit risk to supplier, collect outstanding debts from customers." atom="credit management action"/>
+        <Term description="Supplier executes internal prioritisation process on a complaint (including determining its urgency)." atom="internal prioritisation"/>
+        <Term description="Supplier acknowledges a complaint immediately e.g. acknowledgement during phone call when the Customer raises the complaint." atom="immediate complaint acknowledgment"/>
+        <Term description="Supplier informs customer reasons for delay in resolving a complaint." atom="inform reasons delay"/>
+        <Term description="Customer contacts supplier within specified timeframe in invitation to contact." atom="contact within timeframe"/>
+        <Term description="Supplier informs customer of proposed resolution within 15 days of receiving the complaint." atom="inform proposed resolution 15 days"/>
+        <Term description="Complaint is escalated for resolution." atom="escalation"/>
+        <Term description="Supplier has complied with TCPC clause 8.2.1.c informing the customer about internal and external escalation processes." atom="complied821c"/>
+    </Vocabulary>
+    <Rules>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.vi.B">
+            <ControlObjective>The supplier must delay commencement of any legal proceedings for 7 Working Days after Consumer is advised of the outcome of their Complaint</ControlObjective>
+            <LegalRepresentation>delaying commencement of any legal proceedings while a Complaint is being handled internally and for 7 Working Days after Consumer is advised of the outcome of their Complaint</LegalRepresentation>
+            <FormalRepresentation>complaint(X),notification sent less than 7 days(X),resolution(X) =&gt; [OM]-initiate legal proceedings(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.vi.A">
+            <ControlObjective>The supplier must delay commencement of any legal proceedings while a Complaint is being handled internally.</ControlObjective>
+            <LegalRepresentation>delaying commencement of any legal proceedings while a Complaint is being handled internally and for 7 Working Days after Consumer is advised of the outcome of their Complaint</LegalRepresentation>
+            <FormalRepresentation>complaint(X),investigated(X) =&gt; [OM]-initiate legal proceedings(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.v.2">
+            <ControlObjective>Supplier must not take Credit Management action in relation to a specified disputed amount that is the subject of an unresolved Complaint in circumstances where the Supplier is aware that the Complaint has not been Resolved to the satisfaction of the Consumer and is being investigated by the Supplier, the TIO or a relevant recognised third party.</ControlObjective>
+            <LegalRepresentation>not taking Credit Management action in relation to a specified disputed amount that is the subject of an unresolved Complaint in circumstances where the Supplier is aware that the Complaint has not been Resolved to the satisfaction of the Consumer and is being investigated by the Supplier, the TIO or a relevant recognised third party</LegalRepresentation>
+            <FormalRepresentation>-customer satisfaction(X),investigated(X),resolution(X),topic of complaint is on credit(X) =&gt; [OM]-credit management action(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.v.1">
+            <ControlObjective>Supplier must not take Credit Management action in relation to a specified disputed amount that is the subject of an unresolved Complaint in circumstances where the Supplier is aware that the Complaint has not been Resolved to the satisfaction of the Consumer and is being investigated by the Supplier, the TIO or a relevant recognised third party</ControlObjective>
+            <LegalRepresentation>not taking Credit Management action in relation to a specified disputed amount that is the subject of an unresolved Complaint in circumstances where the Supplier is aware that the Complaint has not been Resolved to the satisfaction of the Consumer and is being investigated by the Supplier, the TIO or a relevant recognised third party</LegalRepresentation>
+            <FormalRepresentation>complaint(X),-resolution(X),topic of complaint is on credit(X) =&gt; [OM]-credit management action(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.iv.D">
+            <ControlObjective>Supplier must resolve billing errors in the the current billing period.</ControlObjective>
+            <LegalRepresentation>resolving Billing errors in current Bills</LegalRepresentation>
+            <FormalRepresentation>billing complaint(X),billing error(X) =&gt; [OAPNP]fix error current billing period(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.e.4">
+            <ControlObjective>If the Supplier has attempted but failed to make contact after performing the actions described in TCPC clause 8.2.1.e (written message to customer at last known address, state that they were unable to contact the Consumer, provide details of those contact attempts and provide an invitation to contact the Supplier to Resolve the Complaint within a specific timeframe of no less than 10 Working Days.), the Supplier is considered to have complied with TCPC section 8.2.1.e</ControlObjective>
+            <LegalRepresentation>If the Supplier has attempted but failed to make contact after performing the actions described in TCPC clause 8.2.1.e (written message to customer at last known address, state that they were unable to contact the Consumer, provide details of those contact attempts and provide an invitation to contact the Supplier to Resolve the Complaint within a specific timeframe of no less than 10 Working Days.), the Supplier is considered to have complied with TCPC section 8.2.1.e</LegalRepresentation>
+            <FormalRepresentation>-contact within timeframe(X),send invitation with timeframe greater than 10 days(X),send list of contact attempts(X),send written no contact message(X) =&gt; complied821e(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.e.3">
+            <ControlObjective>If Supplier is unable to contact a Consumer to Resolve their Complaint, they must sent an invitation to contact the Supplier to discuss the Complaint within a timeframe of no less than 10 working days.</ControlObjective>
+            <LegalRepresentation>If a Supplier is unable to contact a Consumer to Resolve their Complaint, or to advise them of the outcome of their Complaint, the Supplier must write to the Consumer at their last known address, state that they were unable to contact the Consumer, provide details of those contact attempts and provide an invitation to contact the Supplier to Resolve the Complaint within a specific timeframe of no less than 10 Working Days.</LegalRepresentation>
+            <FormalRepresentation>complaint(X),no contact(X) =&gt; [OAPNP]send invitation with timeframe greater than 10 days(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.e.2">
+            <ControlObjective>If Supplier is unable to contact a Consumer to Resolve their Complaint, they must provide details of those contact attempts in the written message to the Consumer.</ControlObjective>
+            <LegalRepresentation>If a Supplier is unable to contact a Consumer to Resolve their Complaint, or to advise them of the outcome of their Complaint, the Supplier must write to the Consumer at their last known address, state that they were unable to contact the Consumer, provide details of those contact attempts and provide an invitation to contact the Supplier to Resolve the Complaint within a specific timeframe of no less than 10 Working Days.</LegalRepresentation>
+            <FormalRepresentation>complaint(X),no contact(X) =&gt; [OAPNP]send list of contact attempts(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.e.1">
+            <ControlObjective>If a Supplier is unable to contact a Consumer to Resolve their Complaint, or to advise them of the outcome of their Complaint, the Supplier must write to the Consumer at their last known address, state that they were unable to contact the Consumer</ControlObjective>
+            <LegalRepresentation>If a Supplier is unable to contact a Consumer to Resolve their Complaint, or to advise them of the outcome of their Complaint, the Supplier must write to the Consumer at their last known address, state that they were unable to contact the Consumer, provide details of those contact attempts and provide an invitation to contact the Supplier to Resolve the Complaint within a specific timeframe of no less than 10 Working Days.</LegalRepresentation>
+            <FormalRepresentation>complaint(X),no contact(X) =&gt; [OAPNP]send written no contact message(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.d.3">
+            <ControlObjective>For a frivolous or vexatious complaint, a Supplier is not then required to accept further Complaints from that Consumer on the same issue other than in the course of an external dispute resolution process.</ControlObjective>
+            <LegalRepresentation></LegalRepresentation>
+            <FormalRepresentation>frivolous or vexatious(X) =&gt; -complaint(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.d.2">
+            <ControlObjective>If, after careful consideration and appropriate internal escalation, a Supplier concludes that a Complaint is frivolous or vexatious and that it can do nothing more to assist the Consumer or that, in view of the Consumer’s behaviour, it chooses not to deal with the Customer any further, it must inform the Consumer about the options for external dispute resolution including the TIO.</ControlObjective>
+            <LegalRepresentation>If, after careful consideration and appropriate internal escalation, a Supplier concludes that a Complaint is frivolous or vexatious and that it can do nothing more to assist the Consumer or that, in view of the Consumer’s behaviour, it chooses not to deal with the Customer any further, it must inform the Consumer in writing of the reasons and tell them about the options for external dispute resolution including the TIO. A Supplier is not then required to accept further Complaints from that Consumer on the same issue other than in the course of an external dispute resolution process.</LegalRepresentation>
+            <FormalRepresentation>escalation(X),frivolous or vexatious(X),no further assistance(X) =&gt; [OAPNP]inform external dispute resolution(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.d.1">
+            <ControlObjective>If, after careful consideration and appropriate internal escalation, a Supplier concludes that a Complaint is frivolous or vexatious and that it can do nothing more to assist the Consumer or that, in view of the Consumer’s behaviour, it chooses not to deal with the Customer any further, it must inform the Consumer in writing of the reasons. </ControlObjective>
+            <LegalRepresentation>If, after careful consideration and appropriate internal escalation, a Supplier concludes that a Complaint is frivolous or vexatious and that it can do nothing more to assist the Consumer or that, in view of the Consumer’s behaviour, it chooses not to deal with the Customer any further, it must inform the Consumer in writing of the reasons and tell them about the options for external dispute resolution including the TIO. A Supplier is not then required to accept further Complaints from that Consumer on the same issue other than in the course of an external dispute resolution process.</LegalRepresentation>
+            <FormalRepresentation>escalation(X),frivolous or vexatious(X),no further assistance(X) =&gt; [OAPNP]inform reasons not to proceed(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.c.r">
+            <ControlObjective>The supplier can be deemed as compliant with TCPC clause 8.2.1.c if the customer remains dissatisfied with the resolution, has been informed for internal escalation and external dispute resolution, and has consented to close the complaint.</ControlObjective>
+            <LegalRepresentation></LegalRepresentation>
+            <FormalRepresentation>customer consent close case(X),customer dissatisfied resolution(X),inform external dispute resolution(X),inform internal escalation process(X) =&gt; complied821c(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.c.p">
+            <ControlObjective>The supplier can be deemed as compliant with TCPC clause 8.2.1.c if the customer remains dissatisfied with progress of resolution, has been informed for internal escalation and external dispute resolution, and has consented to close the complaint.</ControlObjective>
+            <LegalRepresentation></LegalRepresentation>
+            <FormalRepresentation>customer consent close case(X),customer dissatisfied progress(X),inform external dispute resolution(X),inform internal escalation process(X) =&gt; complied821c(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.c.7">
+            <ControlObjective>Supplier must inform a customer who asks about their options to pursue the complaint further about options for external dispute resolution including the TIO.</ControlObjective>
+            <LegalRepresentation>Supplier must inform a customer who asks about their options to pursue the complaint further about options for external dispute resolution including the TIO.</LegalRepresentation>
+            <FormalRepresentation>customer asks pursue complaint further(X) =&gt; [OAPNP]inform external dispute resolution(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.c.6">
+            <ControlObjective>Supplier must inform a customer who asks about their options to pursue the complaint further about the internal escalation process.</ControlObjective>
+            <LegalRepresentation>Supplier must inform a customer who asks about their options to pursue the complaint further about the internal escalation process.</LegalRepresentation>
+            <FormalRepresentation>customer asks pursue complaint further(X) =&gt; [OAPNP]inform internal escalation process(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.c.5">
+            <ControlObjective>Supplier must inform a customer who is dissatisfied about resolution of a complaint the options for internal escalation.</ControlObjective>
+            <LegalRepresentation>Supplier must inform a customer who is dissatisfied about resolution of a complaint the options for internal escalation.</LegalRepresentation>
+            <FormalRepresentation>customer dissatisfied resolution(X) =&gt; [OAPNP]inform internal escalation process(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.c.4">
+            <ControlObjective>Supplier must inform a customer who is dissatisfied about resolution of a complaint the options for external dispute resolution.</ControlObjective>
+            <LegalRepresentation>Supplier must inform a customer who is dissatisfied about resolution of a complaint the options for external dispute resolution.</LegalRepresentation>
+            <FormalRepresentation>customer dissatisfied resolution(X) =&gt; [OAPNP]inform external dispute resolution(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.c.3">
+            <ControlObjective>Supplier must inform a customer who is dissatisfied about progress of complaint resolution the options for external dispute resolution.</ControlObjective>
+            <LegalRepresentation>Supplier must inform a customer who is dissatisfied about progress of complaint resolution the options for external dispute resolution.</LegalRepresentation>
+            <FormalRepresentation>customer dissatisfied progress(X) =&gt; [OAPNP]inform external dispute resolution(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.c.2">
+            <ControlObjective>Supplier must inform a customer who is dissatisfied about progress of a complaint the options for internal escalation.</ControlObjective>
+            <LegalRepresentation>Supplier must inform a customer who is dissatisfied about progress of a complaint the options for internal escalation.</LegalRepresentation>
+            <FormalRepresentation>customer dissatisfied progress(X) =&gt; [OAPNP]inform internal escalation process(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.b.3">
+            <ControlObjective>If after internal prioritisation and internal escalation the Consumer remains dissatisfied, the Supplier must tell the Consumer of the options for external dispute resolution, including the TIO.</ControlObjective>
+            <LegalRepresentation>If after internal prioritisation and internal escalation the Consumer remains dissatisfied, the Supplier must tell the Consumer of the options for external dispute resolution, including the TIO.</LegalRepresentation>
+            <FormalRepresentation>customer dissatisfied timeframe(X),escalation(X),internal prioritisation(X) =&gt; [OAPNP]inform external dispute resolution(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.b.2">
+            <ControlObjective>Supplier must inform a customer who is dissatisfied about timeframe for complaint resolution about the Supplier's internal escalation process.</ControlObjective>
+            <LegalRepresentation>Supplier must inform a customer who is dissatisfied about timeframe for complaint resolution about the Supplier's internal escalation process.</LegalRepresentation>
+            <FormalRepresentation>customer dissatisfied timeframe(X) =&gt; [OAPNP]inform internal escalation process(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.b.1">
+            <ControlObjective>Supplier must inform a customer who is dissatisfied about timeframe for complaint resolution about the Supplier's internal prioritisation process.</ControlObjective>
+            <LegalRepresentation>Supplier must inform a customer who is dissatisfied about timeframe for complaint resolution about the Supplier's internal prioritisation process.</LegalRepresentation>
+            <FormalRepresentation>customer dissatisfied timeframe(X) =&gt; [OAPNP]inform internal prioritisation(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.xv">
+            <ControlObjective>Where a Complaint is Closed with the consent of the customer and the customer requests confirmation, the supplier must provide written confirmation of the resolution within 5 working days.</ControlObjective>
+            <LegalRepresentation>Where a Complaint is Closed with the consent of the customer and the customer requests confirmation, the supplier must provide written confirmation of the resolution within 5 working days.</LegalRepresentation>
+            <FormalRepresentation>close case(X),complaint(X),customer consent close case(X),customer request confirmation of resolution(X) =&gt; [OAPNP]provide confirmation resolution 5 days(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.xiv.5">
+            <ControlObjective>The supplier must not close a complaint without consent from the customer, or complying with TCPC clauses 8.2.1.c, 8.2.1.d or 8.2.1.e</ControlObjective>
+            <LegalRepresentation>The supplier must not close a complaint without consent from the customer, or complying with TCPC clauses 8.2.1.c, 8.2.1.d or 8.2.1.e</LegalRepresentation>
+            <FormalRepresentation>=&gt; -close case(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.xiv.4">
+            <ControlObjective>The supplier can close the complaint if it complies with TCPC clause 8.2.1.e (i.e. supplier is unable to contact the customer).</ControlObjective>
+            <LegalRepresentation>only closing a Complaint with the consent of the Consumer or if clauses 8.2.1.(c),(d) or (e) below have been complied with</LegalRepresentation>
+            <FormalRepresentation>complaint(X),complied821e(X) =&gt; [-OM]-close case(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.xiv.3">
+            <ControlObjective>The supplier can close the complaint if it complies with TCPC clause 8.2.1.d i.e. complaint is deemed frivolous or vexatious and has been handled accordingly. </ControlObjective>
+            <LegalRepresentation>only closing a Complaint with the consent of the Consumer or if clauses 8.2.1.(c),(d) or (e) below have been complied with</LegalRepresentation>
+            <FormalRepresentation>complaint(X),escalation(X),frivolous or vexatious(X),inform reasons not to proceed(X),no further assistance(X) =&gt; [-OM]-close case(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.xiv.2">
+            <ControlObjective>The supplier can close the complaint if it complies with TCPC clause 8.2.1.c (i.e. customer is dissatisfied with progress or outcome and has been informed of their options to escalate the issue).</ControlObjective>
+            <LegalRepresentation>only closing a Complaint with the consent of the Consumer or if clauses 8.2.1.(c),(d) or (e) below have been complied with</LegalRepresentation>
+            <FormalRepresentation>complaint(X),complied821c(X) =&gt; [-OM]-close case(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.xiv.1">
+            <ControlObjective>The supplier can close the complaint if the customer consents to closing the complaint.</ControlObjective>
+            <LegalRepresentation>only closing a Complaint with the consent of the Consumer or if clauses 8.2.1.(c),(d) or (e) below have been complied with</LegalRepresentation>
+            <FormalRepresentation>complaint(X),customer consent close case(X) =&gt; [-OM]-close case(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.xiv">
+            <ControlObjective>The supplier must not close a complaint without consent from the customer, or complying with TCPC clauses 8.2.1.c, 8.2.1.d or 8.2.1.e</ControlObjective>
+            <LegalRepresentation>only closing a Complaint with the consent of the Consumer or if clauses 8.2.1.(c),(d) or (e) below have been complied with</LegalRepresentation>
+            <FormalRepresentation>complaint(X) =&gt; [OM]-close case(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.xiii.B.3">
+            <ControlObjective>If the supplier's actions to resolve a complaint are contingent on customer actions that are pending, the obligation to resolve the complaint within 10 working days is terminated</ControlObjective>
+            <LegalRepresentation>completing all necessary actions to deliver the Resolution offered within 10 Wokring Days of the Consumer's or former Customer's acceptance of that Resolution unless: the actions are contingent on actions by the Consumer or former Customer that have not been completed.</LegalRepresentation>
+            <FormalRepresentation>complaint(X),pending customer action(X) =&gt; [-OAPNP]resolve 10 days(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.xiii.B.2">
+            <ControlObjective>Supplier must complete all necessary actions to deliver the Resolution offered within 10 Working Days of the Customer's acceptance of that resolution unless previously a different resolution date was agreed with the customer.</ControlObjective>
+            <LegalRepresentation></LegalRepresentation>
+            <FormalRepresentation>agreed custom resolution date(X),complaint(X) =&gt; [-OAPNP]resolve 10 days(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.xiii.B.1">
+            <ControlObjective>Supplier must complete all necessary actions to deliver the Resolution offered by the resolution date agreed with the customer.</ControlObjective>
+            <LegalRepresentation>completing all necessary actions to deliver the Resolution offered within 10 Working Days of the Customer's acceptance of that resolution unless: A. otherwise agreed with the customer; B. the actions are contingent on actions by the customer that have not been completed.</LegalRepresentation>
+            <FormalRepresentation>agreed custom resolution date(X),complaint(X) =&gt; [OAPNP]resolve by custom date(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.xiii.A">
+            <ControlObjective>Supplier must complete all necessary actions to deliver the Resolution offered within 10 Working Days of the Customer's acceptance of that resolution unless...</ControlObjective>
+            <LegalRepresentation>completing all necessary actions to deliver the Resolution offered within 10 Working Days of the Customer's acceptance of that resolution unless: A. otherwise agreed with the customer; B. the actions are contingent on actions by the customer that have not been completed.</LegalRepresentation>
+            <FormalRepresentation>complaint(X),inform proposed resolution(X),offer accepted(X) =&gt; [OAPNP]resolve 10 days(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.xii">
+            <ControlObjective>Supplier must advise Consumers in plain language of the Resolution of their Complaint, as soon as practicable after Supplier completes its investigation of the Complaint</ControlObjective>
+            <LegalRepresentation>advising Consumers in plain language of the Resolution of their Complaint, as soon as practicable after Supplier completes its investigation of the Complaint</LegalRepresentation>
+            <FormalRepresentation>complaint(X),investigated(X) =&gt; [OAPNP]inform proposed resolution(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.xi">
+            <ControlObjective>Supplier must provide a means for the Consumer to monitor the Complaint's progress;</ControlObjective>
+            <LegalRepresentation>providing a means for the Consumer to monitor the Complaint's progress;</LegalRepresentation>
+            <FormalRepresentation>complaint(X),complaint acknowledgment(X) =&gt; [OM]customer monitor progress(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.x">
+            <ControlObjective>Supplier must advise Consumers of any delays to promised timeframes</ControlObjective>
+            <LegalRepresentation>advising Consumers of any delays to promised timeframes</LegalRepresentation>
+            <FormalRepresentation>complaint(X),delay in resolution(X) =&gt; [OAPNP]inform delay(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.viii.2">
+            <ControlObjective>For urgent complaints, suppliers must implement the proposed resolution of the complaint within 2 working days after the complaint is received if the resolution is accepted by the customer.</ControlObjective>
+            <LegalRepresentation>For Urgent Complaints, providing confirmation of the proposed Resolution of the urgent aspects of the Complaint and, if accepted by the Consumer, implementing the urgent aspects of the Resolution within 2 working days after the date the Complaint is received</LegalRepresentation>
+            <FormalRepresentation>complaint(X),offer accepted(X),urgent(X) =&gt; [OAPNP]implement resolution 2 days(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.viii.1">
+            <ControlObjective>For urgent complaints, suppliers must provide a proposed resolution of the complaint within 2 working days after the complaint is received.</ControlObjective>
+            <LegalRepresentation>For Urgent Complaints, providing confirmation of the proposed Resolution of the urgent aspects of the Complaint and, if accepted by the Consumer, implementing the urgent aspects of the Resolution within 2 working days after the date the Complaint is received</LegalRepresentation>
+            <FormalRepresentation>complaint(X),urgent(X), complaint acknowledgment(X) =&gt; [OAPNP]inform proposed resolution(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.viii.1.ex">
+            <ControlObjective>the supplier is permitted not to inform of the customer of the proposed resolution if the supplier complied with 8.2.1.e in case of a no contact within the proposed timeframe</ControlObjective>
+            <LegalRepresentation></LegalRepresentation>
+            <FormalRepresentation>complied821e(X) =&gt; [P]-inform proposed resolution(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.vii">
+            <ControlObjective>Supplier must inform customers of the proposed resolution within 15 days of receiving the complaint.</ControlObjective>
+            <LegalRepresentation>advising the Consumer of the proposed Resolution of their Complaint within 15 Working Days from the date the Complaint is received in accordance with clause 8.2.1.a or as soon as practicable in all the circumstances</LegalRepresentation>
+            <FormalRepresentation>complaint(X), complaint acknowledgment(X) =&gt; [OAPNP]inform proposed resolution 15 days(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.vii.ex">
+            <ControlObjective>the supplier is permitted not to inform of the customer of the proposed resolution within 15 days if the supplier complied with 8.2.1.e in case of a no contact within the proposed timeframe</ControlObjective>
+            <LegalRepresentation></LegalRepresentation>
+            <FormalRepresentation>complied821c(X) =&gt; [P]-inform proposed resolution 15 days(X)</FormalRepresentation>
+        </Rule>
+        
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.ix.D.u">
+            <ControlObjective>There is no mass disruption of service normally.</ControlObjective>
+            <LegalRepresentation></LegalRepresentation>
+            <FormalRepresentation>=&gt; -declare mass disruption(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.ix.C.u">
+            <ControlObjective>Where a Supplier does not believe the Complaint can be Resolved in 2 Working Days for Urgent Complaints the Supplier must, advise the Customer as soon as practicable after receiving the Complaint if the anticipated delay is 10 Working Days or more and is not the result of a declared mass service disruption, advising the Consumer of their options for external dispute resolution including the TIO</ControlObjective>
+            <LegalRepresentation>where a Supplier does not believe the Complaint can be Resolved in 15 Working Days (or within 2 Working Days for Urgent Complaints) the Supplier must, advise the Customer as soon as practicable after receiving the Complaint if the anticipated delay is 10 Working Days or more and is not the result of a declared mass service disruption, advising the Consumer of their options for external dispute resolution including the TIO</LegalRepresentation>
+            <FormalRepresentation>complaint(X),-declare mass disruption(X),-resolvable 2 days(X),urgent(X) =&gt; [OAPNP]inform external dispute resolution(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.ix.C">
+            <ControlObjective>Where a Supplier does not believe the Complaint can be Resolved in 15 Working Days the Supplier must, advise the Customer as soon as practicable after receiving the Complaint if the anticipated delay is a further 10 Working Days or more and is not the result of a declared mass service disruption, advising the Consumer of their options for external dispute resolution including the TIO</ControlObjective>
+            <LegalRepresentation>where a Supplier does not believe the Complaint can be Resolved in 15 Working Days (or within 2 Working Days for Urgent Complaints) the Supplier must, advise the Customer as soon as practicable after receiving the Complaint if the anticipated delay is a further 10 Working Days or more and is not the result of a declared mass service disruption, advising the Consumer of their options for external dispute resolution including the TIO</LegalRepresentation>
+            <FormalRepresentation>complaint(X),-declare mass disruption(X),-resolvable 25 days(X) =&gt; [OAPNP]inform external dispute resolution(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.ix.B.u">
+            <ControlObjective>Where a Supplier does not believe the Complaint can be Resolved in 2 Working Days for Urgent Complaints the Supplier must advise the Customer as soon as practicable after receiving the Complaint providing a revised timeframe for finalisation</ControlObjective>
+            <LegalRepresentation>where a Supplier does not believe the Complaint can be Resolved in 15 Working Days (or within 2 Working Days for Urgent Complaints) the Supplier must, advise the Customer as soon as practicable after receiving the Complaint providing a revised timeframe for finalisation</LegalRepresentation>
+            <FormalRepresentation>complaint(X),-resolvable 2 days(X),urgent(X) =&gt; [OAPNP]inform timeframe for resolution(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.ix.B">
+            <ControlObjective>Where a Supplier does not believe the Complaint can be Resolved in 15 Working Days the Supplier must advise the Customer as soon as practicable after receiving the Complaint providing a revised timeframe for finalisation</ControlObjective>
+            <LegalRepresentation>where a Supplier does not believe the Complaint can be Resolved in 15 Working Days (or within 2 Working Days for Urgent Complaints) the Supplier must, advise the Customer as soon as practicable after receiving the Complaint providing a revised timeframe for finalisation</LegalRepresentation>
+            <FormalRepresentation>complaint(X),-resolvable 15 days(X) =&gt; [OAPNP]inform timeframe for resolution(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.ix.A.u">
+            <ControlObjective>Where a Supplier does not believe the Complaint can be Resolved in 2 Working Days for Urgent Complaints the Supplier must advise the Customer as soon as practicable after receiving the Complaint the reasons for the delay</ControlObjective>
+            <LegalRepresentation>where a Supplier does not believe the Complaint can be Resolved in 15 Working Days (or within 2 Working Days for Urgent Complaints) the Supplier must, advise the Customer as soon as practicable after receiving the Complaint the reasons for the delay</LegalRepresentation>
+            <FormalRepresentation>complaint(X),-resolvable 2 days(X),urgent(X) =&gt; [OAPNP]inform reasons delay(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.ix.A">
+            <ControlObjective>Where a Supplier does not believe the Complaint can be Resolved in 15 Working Days the Supplier must advise the Customer as soon as practicable after receiving the Complaint the reasons for the delay</ControlObjective>
+            <LegalRepresentation>where a Supplier does not believe the Complaint can be Resolved in 15 Working Days (or within 2 Working Days for Urgent Complaints) the Supplier must, advise the Customer as soon as practicable after receiving the Complaint the reasons for the delay</LegalRepresentation>
+            <FormalRepresentation>complaint(X),-resolvable 15 days(X) =&gt; [OAPNP]inform reasons delay(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.iv.C">
+            <ControlObjective>If the complaint is indicative of a general problem, the root cause of the problem must be addressed as part of resolution.</ControlObjective>
+            <LegalRepresentation>A Supplier must take the following actions to enable this outcome: Demonstrate fairness, courtesy, objectivity and efficiency: Suppliers must demonstrate, fairness and courtesy, objectivity, and efficiency by: where the Complaints are indicative of a wider problem or issue, addressing the root cause of the problem or issue;</LegalRepresentation>
+            <FormalRepresentation>complaint on topic(X),complaint topic indicative of general problem(X),remedy for general problem(X) =&gt; [OAPP]implement remedy for general problem(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.iv.B.2">
+            <ControlObjective>Suppliers must tailoring any remedy offered to address the individual circumstances of the Consumer</ControlObjective>
+            <LegalRepresentation>A Supplier must take the following actions to enable this outcome: Demonstrate fairness, courtesy, objectivity and efficiency: Suppliers must demonstrate, fairness and courtesy, objectivity, and efficiency by: tailoring any remedy offered to address the root cause of the Complaint and to address the individual circumstances of the Consumer</LegalRepresentation>
+            <FormalRepresentation>customer advise special circumstance(X),remedy for special circumstance(X) =&gt; [OAPNP]offer remedy special circumstance(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.iv.B.1">
+            <ControlObjective>Supplier must tailor any remedy offered to address the root cause of the complaint.</ControlObjective>
+            <LegalRepresentation>A Supplier must take the following actions to enable this outcome: Demonstrate fairness, courtesy, objectivity and efficiency: Suppliers must demonstrate, fairness and courtesy, objectivity, and efficiency by: tailoring any remedy offered to address the root cause of the Complaint and to address the individual circumstances of the Consumer</LegalRepresentation>
+            <FormalRepresentation>complaint on topic(X),remedy for topic(X) =&gt; [OAPNP]offer remedy(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.iv.A">
+            <ControlObjective>Supplier must ensure that relevant staff are made aware of potential remedies available to resolve a complaint.</ControlObjective>
+            <LegalRepresentation>A Supplier must take the following actions to enable this outcome: Demonstrate fairness, courtesy, objectivity and efficiency: Suppliers must demonstrate, fairness and courtesy, objectivity, and efficiency by: requiring the appropriate Resolution of Complaints including ensuring relevant staff are aware of the potential remedies available to Resolve a Complaint</LegalRepresentation>
+            <FormalRepresentation>relevant staff(X) =&gt; [OM]aware possible resolution(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.iii">
+            <ControlObjective>Suppliers must implement a process for identification and management of urgent complaints, including checking if each complaint is urgent.</ControlObjective>
+            <LegalRepresentation>A Supplier must take the following actions to enable this outcome: Demonstrate fairness, courtesy, objectivity and efficiency: Suppliers must demonstrate, fairness and courtesy, objectivity, and efficiency by: implementing a process for the identification and management of Urgent Complaints</LegalRepresentation>
+            <FormalRepresentation>complaint(X) =&gt; [OAPNP]check if urgent complaint(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.ii.1">
+            <ControlObjective>Suppliers must attempt to resolve a complaint on first contact.</ControlObjective>
+            <LegalRepresentation>A Supplier must take the following actions to enable this outcome: Demonstrate fairness, courtesy, objectivity and efficiency: Suppliers must demonstrate, fairness and courtesy, objectivity, and efficiency by: where possible, seeking to Resolve a Complaint on first contact</LegalRepresentation>
+            <FormalRepresentation>immediate resolution available(X) =&gt; [OANPNP]immediate resolution(X),[OAPP]escalation(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.ii">
+            <ControlObjective>Suppliers must attempt to resolve a complaint on first contact by checking for immediate resolution.</ControlObjective>
+            <LegalRepresentation>A Supplier must take the following actions to enable this outcome: Demonstrate fairness, courtesy, objectivity and efficiency: Suppliers must demonstrate, fairness and courtesy, objectivity, and efficiency by: where possible, seeking to Resolve a Complaint on first contact</LegalRepresentation>
+            <FormalRepresentation>complaint(X), -no contact(X) =&gt; [OAPNP]check immediate resolution(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.i.A.3">
+            <ControlObjective>Supplier must acknowledge complaints raised by phone immediately.</ControlObjective>
+            <LegalRepresentation>A Supplier must take the following actions to enable this outcome: Demonstrate fairness, courtesy, objectivity and efficiency: Suppliers must demonstrate, fairness and courtesy, objectivity, and efficiency by: acknowledging Complaints: immediately where the Complaint is made in person or by telephone;</LegalRepresentation>
+            <FormalRepresentation>call from complaint number(X),contact staff(X) =&gt; [OAPNP]immediate complaint acknowledgment(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.i.A.2">
+            <ControlObjective>Supplier must acknowledge a complaint within 2 working days where the complaint is made via email, being logged via the Supplier’s website or another website endorsed by the Supplier for that purpose; post but a posted response is not requested; telephone and a message is recorded without direct contact with a staff member of the Supplier</ControlObjective>
+            <LegalRepresentation>A Supplier must take the following actions to enable this outcome: Demonstrate fairness, courtesy, objectivity and efficiency: Suppliers must demonstrate, fairness and courtesy, objectivity, and efficiency by: acknowledging Complaints: within 2 Working Days where the Complaint is made by: email; being logged via the Supplier’s website or another website endorsed by the Supplier for that purpose; post but a posted response is not requested; telephone and a message is recorded without direct contact with a staff member of the Supplier</LegalRepresentation>
+            <FormalRepresentation>complaint(X), -no contact(X) =&gt; [OAPNP]complaint acknowledgment 2 working day(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.2.1.a.i.A.1">
+            <ControlObjective>Supplier must acknowledge complaints raised in person immediately.</ControlObjective>
+            <LegalRepresentation>A Supplier must take the following actions to enable this outcome: Demonstrate fairness, courtesy, objectivity and efficiency: Suppliers must demonstrate, fairness and courtesy, objectivity, and efficiency by: acknowledging Complaints: immediately where the Complaint is made in person or by telephone;</LegalRepresentation>
+            <FormalRepresentation>complaint in person(X) =&gt; [OAPNP]immediate complaint acknowledgment(X)</FormalRepresentation>
+        </Rule>
+    </Rules>
+    <SuperiorityRelations>
+        <SuperiorityRelation inferiorRuleLabel="tcpc.8.2.1.a.xiv" superiorRuleLabel="tcpc.8.2.1.a.xiv.1"/>
+        <SuperiorityRelation inferiorRuleLabel="tcpc.8.2.1.a.xiv" superiorRuleLabel="tcpc.8.2.1.a.xiv.2"/>
+        <SuperiorityRelation inferiorRuleLabel="tcpc.8.2.1.a.xiv" superiorRuleLabel="tcpc.8.2.1.a.xiv.3"/>
+        <SuperiorityRelation inferiorRuleLabel="tcpc.8.2.1.a.xiv" superiorRuleLabel="tcpc.8.2.1.a.xiv.4"/>
+        <SuperiorityRelation inferiorRuleLabel="tcpc.8.2.1.a.xiii.A" superiorRuleLabel="tcpc.8.2.1.a.xiii.B.2"/>
+        <SuperiorityRelation inferiorRuleLabel="tcpc.8.2.1.a.viii.1" superiorRuleLabel="tcpc.8.2.1.a.viii.1.ex"/>
+        <SuperiorityRelation inferiorRuleLabel="tcpc.8.2.1.a.vii" superiorRuleLabel="tcpc.8.2.1.a.vii.ex"/>
+    </SuperiorityRelations>
+</RuleSet>

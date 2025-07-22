@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RuleSet xmlns="http://www.nicta.com.au/bpc/CombinedRuleSetDefinition/0.1" description="Suppliers must ensure that their Complaint handling processes are sufficiently resourced to ensure that they will meet their obligations under this Code." version="0.1" displayName="Telecommunication Consumer Protections Code C628.2012: Section 8.4: Resourcing of Complaint handling processes" uri="TCPC/8.4/ResourcingComplaintHandlingProcesses">
+    <Vocabulary>
+        <Term description="Supplier resources/hires sufficient complaint management staff to handle the volume of complaints received at the level of quality defined by requirements for complaint handling in TCPC section 8." atom="resource with sufficient complaint management staff"/>
+        <Term description="Supplier gives complaint management staff authority to resolve complaints" atom="authorise complaint management staff to resolve complaints"/>
+        <Term description="Supplier designs or updates complaint management processes" atom="complaint management processes"/>
+        <Term description="Supplier monitors complaint management performance at least every 3 months." atom="monitor complaint management performance at least every 3 months"/>
+        <Term description="Assign a complaint to be investigated by staff without direct involvement in circumstances of the complaint to avoid conflicts of interest." atom="assign complaint to staff without direct involvement in circumstances of complaint"/>
+        <Term description="Supplier assigns staff to complaint handling process. This may include hiring new staff." atom="assign staff to complaint handling"/>
+        <Term description="Supplier has a complaint handling process as per TCPC section 8." atom="complaint handling process"/>
+        <Term description="Supplier ensures complaint management staff have necessary interpersonal and communications skills." atom="ensure complaint management staff have necessary interpersonal and communication skills"/>
+        <Term description="Supplier trains and supervises complaint management staff" atom="train and supervise complaint management staff"/>
+        <Term description="Supplier identifies a resourcing issue with complaint handling process." atom="identify complaint handling resourcing issue"/>
+        <Term description="Supplier receives a complaint from a customer. A complaint is an expression of dissatisfaction made to a Supplier in relation to its Telecommunications Products or the complaints handling process itself, where a response or Resolution is explicitly or implicitly expected by the Consumer." atom="complaint"/>
+    </Vocabulary>
+    <Rules>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.4.1.d">
+            <ControlObjective>Supplier must ensure that complaints are not investigated by staff with a direct involvement in the circumstances of the Complaint.</ControlObjective>
+            <LegalRepresentation>Avoid conflicts of interest:  ensure that the Complaint is not investigated by staff with a direct involvement in the circumstances of the Complaint.</LegalRepresentation>
+            <FormalRepresentation>complaint(X) =&gt; [OAPNP]assign complaint to staff without direct involvement in circumstances of complaint(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.4.1.c.5">
+            <ControlObjective>When designing of complaint management processes, Supplier must ensure staff with Complaints management responsibilities...have the authority to Resolve Complaints</ControlObjective>
+            <LegalRepresentation>Supplier must ensure staff with Complaints management responsibilities...have the authority to Resolve Complaints</LegalRepresentation>
+            <FormalRepresentation>complaint management processes(X) =&gt; [OAPP]authorise complaint management staff to resolve complaints(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.4.1.c.4">
+            <ControlObjective>Upon any redesign of complaint handling process, supplier must ensure staff with Complaints management responsibilities are trained and supervised.</ControlObjective>
+            <LegalRepresentation>Supplier must ensure staff with Complaints management responsibilities are trained and supervised.</LegalRepresentation>
+            <FormalRepresentation>complaint management processes(X) =&gt; [OAPP]train and supervise complaint management staff(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.4.1.c.3">
+            <ControlObjective>Supplier must ensure staff with Complaints management responsibilities...have the necessary interpersonal and communications skills</ControlObjective>
+            <LegalRepresentation>Skilled staff: ensure staff with Complaints management responsibilities...have the necessary interpersonal and communications skills, to ensure that the Supplier's obligations under this chapter are met;</LegalRepresentation>
+            <FormalRepresentation>assign staff to complaint handling(X) =&gt; [OAPP]ensure complaint management staff have necessary interpersonal and communication skills(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.4.1.c.2">
+            <ControlObjective>Supplier must ensure staff with Complaints management responsibilities...have the authority to Resolve Complaints</ControlObjective>
+            <LegalRepresentation>Skilled staff: ensure staff with Complaints management responsibilities...have the authority to Resolve Complaints</LegalRepresentation>
+            <FormalRepresentation>assign staff to complaint handling(X) =&gt; [OAPP]authorise complaint management staff to resolve complaints(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.4.1.c.1">
+            <ControlObjective>Supplier must ensure staff with Complaints management responsibilities are trained and supervised.</ControlObjective>
+            <LegalRepresentation>Skilled staff: ensure staff with Complaints management responsibilities are trained and supervised</LegalRepresentation>
+            <FormalRepresentation>assign staff to complaint handling(X) =&gt; [OAPP]train and supervise complaint management staff(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.4.1.b.2">
+            <ControlObjective>Upon identifying resourcing issues, suppliers must take prompt action to ensure appropriate resources are in place for the complaint handling process.</ControlObjective>
+            <LegalRepresentation>Monitor resourcing: monitor its performance under this clause on a quarterly basis to ensure appropriate resources are in place and take prompt action where this is not the case;</LegalRepresentation>
+            <FormalRepresentation>identify complaint handling resourcing issue(X) =&gt; [OAPP]resource with sufficient complaint management staff(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.4.1.b.1">
+            <ControlObjective>Suppliers must monitor their complaint handling performance at least every quarter (3 months) to ensure appropriate resources are in place.</ControlObjective>
+            <LegalRepresentation>Monitor resourcing: monitor its performance under this clause on a quarterly basis to ensure appropriate resources are in place and take prompt action where this is not the case;</LegalRepresentation>
+            <FormalRepresentation>complaint handling process(X) =&gt; [OAPP]monitor complaint management performance at least every 3 months(X)</FormalRepresentation>
+        </Rule>
+        <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DflRuleType" ruleLabel="tcpc.8.4.1.a">
+            <ControlObjective>Supplier must have sufficient resources for the Complaint handling process such that the process can be executed to meet the requirements of TCPC section 8.</ControlObjective>
+            <LegalRepresentation>Resourcing: resource the Complaint handling process to ensure that all Complaints are dealt with in accordance with the requirements of this chapter and this Code and any additional requirements of its Complaint handling process;</LegalRepresentation>
+            <FormalRepresentation>complaint management processes(X) =&gt; [OAPP]resource with sufficient complaint management staff(X)</FormalRepresentation>
+        </Rule>
+    </Rules>
+    <SuperiorityRelations/>
+</RuleSet>

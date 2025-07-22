@@ -1,0 +1,1647 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lrml:LegalRuleML xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ruleml="http://ruleml.org/spec" xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/ ../../schemas/xsd/xsd-compact/lrml-compact.xsd">
+    <lrml:Statements>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_i_A_1">
+            <ruleml:Rule key="tcpc_8_2_1_a_i_A_1">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Atom>
+                        <ruleml:Rel>complaintInPerson</ruleml:Rel>
+                        <ruleml:Ind>X</ruleml:Ind>
+                    </ruleml:Atom>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>immediateComplaintAcknowledgment</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_i_A_2">
+            <ruleml:Rule key="tcpc_8_2_1_a_i_A_2">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Neg>
+                        <ruleml:Atom>
+                            <ruleml:Rel>noContact</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:Neg>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaintAcknowledgment2WorkingDay</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_i_A_3">
+            <ruleml:Rule key="tcpc_8_2_1_a_i_A_3">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>callFromComplaintNumber</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>contactStaff</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>immediateComplaintAcknowledgment</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_ii">
+            <ruleml:Rule key="tcpc_8_2_1_a_ii">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Neg>
+                        <ruleml:Atom>
+                            <ruleml:Rel>noContact</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:Neg>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>checkImmediateResolution</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_ii_1">
+            <ruleml:Rule key="tcpc_8_2_1_a_ii_1">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Atom>
+                        <ruleml:Rel>immediateResolutionAvailable</ruleml:Rel>
+                        <ruleml:Ind>X</ruleml:Ind>
+                    </ruleml:Atom>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:SuborderList>
+                        <lrml:Obligation>
+                            <ruleml:Atom>
+<ruleml:Rel>immediateResolution</ruleml:Rel>
+<ruleml:Ind>X</ruleml:Ind>
+                            </ruleml:Atom>
+                        </lrml:Obligation>
+                        <lrml:Obligation>
+                            <ruleml:Atom>
+<ruleml:Rel>escalation</ruleml:Rel>
+<ruleml:Ind>X</ruleml:Ind>
+                            </ruleml:Atom>
+                        </lrml:Obligation>
+                    </lrml:SuborderList>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_iii">
+            <ruleml:Rule key="tcpc_8_2_1_a_iii">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Atom>
+                        <ruleml:Rel>complaint</ruleml:Rel>
+                        <ruleml:Ind>X</ruleml:Ind>
+                    </ruleml:Atom>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>checkIfUrgentComplaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_iv_A">
+            <ruleml:Rule key="tcpc_8_2_1_a_iv_A">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Atom>
+                        <ruleml:Rel>relevantStaff</ruleml:Rel>
+                        <ruleml:Ind>X</ruleml:Ind>
+                    </ruleml:Atom>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>awarePossibleResolution</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_iv_B_1">
+            <ruleml:Rule key="tcpc_8_2_1_a_iv_B_1">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaintOnTopic</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>remedyForTopic</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>offerRemedy</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_iv_B_2">
+            <ruleml:Rule key="tcpc_8_2_1_a_iv_B_2">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>customerAdviseSpecialCircumstance</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>remedyForSpecialCircumstance</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>offerRemedySpecialCircumstance</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_iv_C">
+            <ruleml:Rule key="tcpc_8_2_1_a_iv_C">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaintOnTopic</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaintTopicIndicativeOfGeneralProblem</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>remedyForGeneralProblem</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>implementRemedyForGeneralProblem</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_ix_A">
+            <ruleml:Rule key="tcpc_8_2_1_a_ix_A">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Neg>
+                        <ruleml:Atom>
+                            <ruleml:Rel>resolvable15Days</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:Neg>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>informReasonsDelay</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_ix_A_u">
+            <ruleml:Rule key="tcpc_8_2_1_a_ix_A_u">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Neg>
+                        <ruleml:Atom>
+                            <ruleml:Rel>resolvable2Days</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:Neg>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>urgent</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>informReasonsDelay</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_ix_B">
+            <ruleml:Rule key="tcpc_8_2_1_a_ix_B">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Neg>
+                        <ruleml:Atom>
+                            <ruleml:Rel>resolvable15Days</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:Neg>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>informTimeframeForResolution</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_ix_B_u">
+            <ruleml:Rule key="tcpc_8_2_1_a_ix_B_u">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Neg>
+                        <ruleml:Atom>
+                            <ruleml:Rel>resolvable2Days</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:Neg>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>urgent</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>informTimeframeForResolution</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_ix_C">
+            <ruleml:Rule key="tcpc_8_2_1_a_ix_C">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Neg>
+                        <ruleml:Atom>
+                            <ruleml:Rel>resolvable25Days</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:Neg>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>informExternalDisputeResolution</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_ix_C_u">
+            <ruleml:Rule key="tcpc_8_2_1_a_ix_C_u">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Neg>
+                        <ruleml:Atom>
+                            <ruleml:Rel>resolvable2Days</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:Neg>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>urgent</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>informExternalDisputeResolution</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:ConstitutiveStatement key="cs_tcpc_8_2_1_a_ix_D_u">
+            <ruleml:Rule key="tcpc_8_2_1_a_ix_D_u">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if/>
+                <ruleml:then>
+                    <ruleml:Neg>
+                        <ruleml:Atom>
+                            <ruleml:Rel>declareMassDisruption</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:Neg>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:ConstitutiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_vii">
+            <ruleml:Rule key="tcpc_8_2_1_a_vii">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>ComplaintAcknowledgment</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>informProposedResolution15Days</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_vii_ex">
+            <ruleml:Rule key="tcpc_8_2_1_a_vii_ex">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Atom>
+                        <ruleml:Rel>complied821c</ruleml:Rel>
+                        <ruleml:Ind>X</ruleml:Ind>
+                    </ruleml:Atom>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Neg>
+                            <ruleml:Atom>
+<ruleml:Rel>iinformProposedResolution15Days</ruleml:Rel>
+<ruleml:Ind>X</ruleml:Ind>
+                            </ruleml:Atom>
+                        </ruleml:Neg>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_viii_1">
+            <ruleml:Rule key="tcpc_8_2_1_a_viii_1">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>ComplaintAcknowledgment</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>urgent</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>informProposedResolution</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_viii_1_ex">
+            <ruleml:Rule key="tcpc_8_2_1_a_viii_1_ex">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Atom>
+                        <ruleml:Rel>complied821e</ruleml:Rel>
+                        <ruleml:Ind>X</ruleml:Ind>
+                    </ruleml:Atom>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Neg>
+                            <ruleml:Atom>
+<ruleml:Rel>iinformProposedResolution</ruleml:Rel>
+<ruleml:Ind>X</ruleml:Ind>
+                            </ruleml:Atom>
+                        </ruleml:Neg>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_viii_2">
+            <ruleml:Rule key="tcpc_8_2_1_a_viii_2">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>offerAccepted</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>urgent</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>implementResolution2Days</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_x">
+            <ruleml:Rule key="tcpc_8_2_1_a_x">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>delayInResolution</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>informDelay</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_xi">
+            <ruleml:Rule key="tcpc_8_2_1_a_xi">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaintAcknowledgment</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>customerMonitorProgress</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_xii">
+            <ruleml:Rule key="tcpc_8_2_1_a_xii">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>investigated</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>informProposedResolution</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_xiii_A">
+            <ruleml:Rule key="tcpc_8_2_1_a_xiii_A">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>informProposedResolution</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>offerAccepted</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>resolve10Days</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_xiii_B_1">
+            <ruleml:Rule key="tcpc_8_2_1_a_xiii_B_1">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>agreedCustomResolutionDate</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>resolveByCustomDate</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_xiii_B_2">
+            <ruleml:Rule key="tcpc_8_2_1_a_xiii_B_2">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>agreedCustomResolutionDate</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>resolve10Days</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_xiii_B_3">
+            <ruleml:Rule key="tcpc_8_2_1_a_xiii_B_3">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>pendingCustomerAction</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>resolve10Days</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_xiv">
+            <ruleml:Rule key="tcpc_8_2_1_a_xiv">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Atom>
+                        <ruleml:Rel>complaint</ruleml:Rel>
+                        <ruleml:Ind>X</ruleml:Ind>
+                    </ruleml:Atom>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Neg>
+                            <ruleml:Atom>
+<ruleml:Rel>closeCase</ruleml:Rel>
+<ruleml:Ind>X</ruleml:Ind>
+                            </ruleml:Atom>
+                        </ruleml:Neg>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_xiv_1">
+            <ruleml:Rule key="tcpc_8_2_1_a_xiv_1">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>customerConsentCloseCase</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Neg>
+                            <ruleml:Atom>
+<ruleml:Rel>closeCase</ruleml:Rel>
+<ruleml:Ind>X</ruleml:Ind>
+                            </ruleml:Atom>
+                        </ruleml:Neg>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_xiv_2">
+            <ruleml:Rule key="tcpc_8_2_1_a_xiv_2">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complied821c</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Neg>
+                            <ruleml:Atom>
+<ruleml:Rel>closeCase</ruleml:Rel>
+<ruleml:Ind>X</ruleml:Ind>
+                            </ruleml:Atom>
+                        </ruleml:Neg>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_xiv_3">
+            <ruleml:Rule key="tcpc_8_2_1_a_xiv_3">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>escalation</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>frivolousOrVexatious</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>informReasonsNotToProceed</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>noFurtherAssistance</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Neg>
+                            <ruleml:Atom>
+<ruleml:Rel>closeCase</ruleml:Rel>
+<ruleml:Ind>X</ruleml:Ind>
+                            </ruleml:Atom>
+                        </ruleml:Neg>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_xiv_4">
+            <ruleml:Rule key="tcpc_8_2_1_a_xiv_4">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complied821e</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Neg>
+                            <ruleml:Atom>
+<ruleml:Rel>closeCase</ruleml:Rel>
+<ruleml:Ind>X</ruleml:Ind>
+                            </ruleml:Atom>
+                        </ruleml:Neg>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:ConstitutiveStatement key="cs_tcpc_8_2_1_a_xiv_5">
+            <ruleml:Rule key="tcpc_8_2_1_a_xiv_5">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if/>
+                <ruleml:then>
+                    <ruleml:Neg>
+                        <ruleml:Atom>
+                            <ruleml:Rel>closeCase</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:Neg>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:ConstitutiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_a_xv">
+            <ruleml:Rule key="tcpc_8_2_1_a_xv">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>closeCase</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>customerConsentCloseCase</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>customerRequestConfirmationOfResolution</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>provideConfirmationResolution5Days</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_b_1">
+            <ruleml:Rule key="tcpc_8_2_1_b_1">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Atom>
+                        <ruleml:Rel>customerDissatisfiedTimeframe</ruleml:Rel>
+                        <ruleml:Ind>X</ruleml:Ind>
+                    </ruleml:Atom>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>informInternalPrioritisation</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_b_2">
+            <ruleml:Rule key="tcpc_8_2_1_b_2">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Atom>
+                        <ruleml:Rel>customerDissatisfiedTimeframe</ruleml:Rel>
+                        <ruleml:Ind>X</ruleml:Ind>
+                    </ruleml:Atom>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>informInternalEscalationProcess</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_b_3">
+            <ruleml:Rule key="tcpc_8_2_1_b_3">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>customerDissatisfiedTimeframe</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>escalation</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>internalPrioritisation</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>informExternalDisputeResolution</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_c_2">
+            <ruleml:Rule key="tcpc_8_2_1_c_2">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Atom>
+                        <ruleml:Rel>customerDissatisfiedProgress</ruleml:Rel>
+                        <ruleml:Ind>X</ruleml:Ind>
+                    </ruleml:Atom>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>informInternalEscalationProcess</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_c_3">
+            <ruleml:Rule key="tcpc_8_2_1_c_3">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Atom>
+                        <ruleml:Rel>customerDissatisfiedProgress</ruleml:Rel>
+                        <ruleml:Ind>X</ruleml:Ind>
+                    </ruleml:Atom>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>informExternalDisputeResolution</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_c_4">
+            <ruleml:Rule key="tcpc_8_2_1_c_4">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Atom>
+                        <ruleml:Rel>customerDissatisfiedResolution</ruleml:Rel>
+                        <ruleml:Ind>X</ruleml:Ind>
+                    </ruleml:Atom>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>informExternalDisputeResolution</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_c_5">
+            <ruleml:Rule key="tcpc_8_2_1_c_5">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Atom>
+                        <ruleml:Rel>customerDissatisfiedResolution</ruleml:Rel>
+                        <ruleml:Ind>X</ruleml:Ind>
+                    </ruleml:Atom>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>informInternalEscalationProcess</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_c_6">
+            <ruleml:Rule key="tcpc_8_2_1_c_6">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Atom>
+                        <ruleml:Rel>customerAsksPursueComplaintFurther</ruleml:Rel>
+                        <ruleml:Ind>X</ruleml:Ind>
+                    </ruleml:Atom>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>informInternalEscalationProcess</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_c_7">
+            <ruleml:Rule key="tcpc_8_2_1_c_7">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Atom>
+                        <ruleml:Rel>customerAsksPursueComplaintFurther</ruleml:Rel>
+                        <ruleml:Ind>X</ruleml:Ind>
+                    </ruleml:Atom>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>informExternalDisputeResolution</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:ConstitutiveStatement key="cs_tcpc_8_2_1_c_p">
+            <ruleml:Rule key="tcpc_8_2_1_c_p">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>customerConsentCloseCase</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>customerDissatisfiedProgress</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>informExternalDisputeResolution</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>informInternalEscalationProcess</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Atom>
+                        <ruleml:Rel>complied821c</ruleml:Rel>
+                        <ruleml:Ind>X</ruleml:Ind>
+                    </ruleml:Atom>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:ConstitutiveStatement>
+        <lrml:ConstitutiveStatement key="cs_tcpc_8_2_1_c_r">
+            <ruleml:Rule key="tcpc_8_2_1_c_r">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>customerConsentCloseCase</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>customerDissatisfiedResolution</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>informExternalDisputeResolution</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>informInternalEscalationProcess</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Atom>
+                        <ruleml:Rel>complied821c</ruleml:Rel>
+                        <ruleml:Ind>X</ruleml:Ind>
+                    </ruleml:Atom>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:ConstitutiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_d_1">
+            <ruleml:Rule key="tcpc_8_2_1_d_1">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>escalation</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>frivolousOrVexatious</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>noFurtherAssistance</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>informReasonsNotToProceed</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_d_2">
+            <ruleml:Rule key="tcpc_8_2_1_d_2">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>escalation</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>frivolousOrVexatious</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>noFurtherAssistance</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>informExternalDisputeResolution</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:ConstitutiveStatement key="cs_tcpc_8_2_1_d_3">
+            <ruleml:Rule key="tcpc_8_2_1_d_3">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Atom>
+                        <ruleml:Rel>frivolousOrVexatious</ruleml:Rel>
+                        <ruleml:Ind>X</ruleml:Ind>
+                    </ruleml:Atom>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Neg>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:Neg>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:ConstitutiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_e_1">
+            <ruleml:Rule key="tcpc_8_2_1_e_1">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>noContact</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>sendWrittenNoContactMessage</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_e_2">
+            <ruleml:Rule key="tcpc_8_2_1_e_2">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>noContact</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>sendListOfContactAttempts</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_e_3">
+            <ruleml:Rule key="tcpc_8_2_1_e_3">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>noContact</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>sendInvitationWithTimeframeGreaterThan10Days</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:ConstitutiveStatement key="cs_tcpc_8_2_1_e_4">
+            <ruleml:Rule key="tcpc_8_2_1_e_4">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Neg>
+                        <ruleml:Atom>
+                            <ruleml:Rel>contactWithinTimeframe</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:Neg>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>sendInvitationWithTimeframeGreaterThan10Days</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>sendListOfContactAttempts</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>sendWrittenNoContactMessage</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <ruleml:Atom>
+                        <ruleml:Rel>complied821e</ruleml:Rel>
+                        <ruleml:Ind>X</ruleml:Ind>
+                    </ruleml:Atom>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:ConstitutiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_iv_D">
+            <ruleml:Rule key="tcpc_8_2_1_iv_D">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>billingComplaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>billingError</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Atom>
+                            <ruleml:Rel>fixErrorCurrentBillingPeriod</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_v_1">
+            <ruleml:Rule key="tcpc_8_2_1_v_1">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Neg>
+                        <ruleml:Atom>
+                            <ruleml:Rel>resolution</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:Neg>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>topicOfComplaintIsOnCredit</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Neg>
+                            <ruleml:Atom>
+<ruleml:Rel>creditManagementAction</ruleml:Rel>
+<ruleml:Ind>X</ruleml:Ind>
+                            </ruleml:Atom>
+                        </ruleml:Neg>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_v_2">
+            <ruleml:Rule key="tcpc_8_2_1_v_2">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:Neg>
+                        <ruleml:Atom>
+                            <ruleml:Rel>customerSatisfaction</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:Neg>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>investigated</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>resolution</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>topicOfComplaintIsOnCredit</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Neg>
+                            <ruleml:Atom>
+<ruleml:Rel>creditManagementAction</ruleml:Rel>
+<ruleml:Ind>X</ruleml:Ind>
+                            </ruleml:Atom>
+                        </ruleml:Neg>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_vi_A">
+            <ruleml:Rule key="tcpc_8_2_1_vi_A">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>investigated</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Neg>
+                            <ruleml:Atom>
+<ruleml:Rel>initiateLegalProceedings</ruleml:Rel>
+<ruleml:Ind>X</ruleml:Ind>
+                            </ruleml:Atom>
+                        </ruleml:Neg>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:PrescriptiveStatement key="ps_tcpc_8_2_1_vi_B">
+            <ruleml:Rule key="tcpc_8_2_1_vi_B">
+                <lrml:hasStrength>
+                    <lrml:DefeasibleStrength iri="http://spin.nicta.com.au/spindle/ruleStrength#defeasible"/>
+                </lrml:hasStrength>
+                <ruleml:if>
+                    <ruleml:And>
+                        <ruleml:Atom>
+                            <ruleml:Rel>complaint</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>notificationSentLessThan7Days</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                        <ruleml:Atom>
+                            <ruleml:Rel>resolution</ruleml:Rel>
+                            <ruleml:Ind>X</ruleml:Ind>
+                        </ruleml:Atom>
+                    </ruleml:And>
+                </ruleml:if>
+                <ruleml:then>
+                    <lrml:Obligation>
+                        <ruleml:Neg>
+                            <ruleml:Atom>
+<ruleml:Rel>initiateLegalProceedings</ruleml:Rel>
+<ruleml:Ind>X</ruleml:Ind>
+                            </ruleml:Atom>
+                        </ruleml:Neg>
+                    </lrml:Obligation>
+                </ruleml:then>
+            </ruleml:Rule>
+        </lrml:PrescriptiveStatement>
+        <lrml:OverrideStatement>
+            <lrml:Override over="tcpc_8_2_1_a_vii_ex" under="tcpc_8_2_1_a_vii"/>
+        </lrml:OverrideStatement>
+        <lrml:OverrideStatement>
+            <lrml:Override over="tcpc_8_2_1_a_viii_1_ex" under="tcpc_8_2_1_a_viii_1"/>
+        </lrml:OverrideStatement>
+        <lrml:OverrideStatement>
+            <lrml:Override over="tcpc_8_2_1_a_xiii_B_2" under="tcpc_8_2_1_a_xiii_A"/>
+        </lrml:OverrideStatement>
+        <lrml:OverrideStatement>
+            <lrml:Override over="tcpc_8_2_1_a_xiv_1" under="tcpc_8_2_1_a_xiv"/>
+        </lrml:OverrideStatement>
+        <lrml:OverrideStatement>
+            <lrml:Override over="tcpc_8_2_1_a_xiv_2" under="tcpc_8_2_1_a_xiv"/>
+        </lrml:OverrideStatement>
+        <lrml:OverrideStatement>
+            <lrml:Override over="tcpc_8_2_1_a_xiv_3" under="tcpc_8_2_1_a_xiv"/>
+        </lrml:OverrideStatement>
+        <lrml:OverrideStatement>
+            <lrml:Override over="tcpc_8_2_1_a_xiv_4" under="tcpc_8_2_1_a_xiv"/>
+        </lrml:OverrideStatement>
+    </lrml:Statements>
+</lrml:LegalRuleML>

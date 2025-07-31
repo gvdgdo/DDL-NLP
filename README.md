@@ -19,7 +19,6 @@ from Legal Documents. In: Pagallo, U., Palmirani, M., Casanovas, P., Sartor, G.,
 Complexity of Legal Systems, Lecture Notes in Computer Science)_, vol. 10791, pp. 287–300. Springer International Publishing,
 Cham (2018)
 
-6. Horner, E., Mateis, C., Governatori, G., Ciabattoni, A. (2025). From Legal Texts to Defeasible Deontic Logic via LLMs: A Study in Automated Semantic Analysis. arXiv. https://arxiv.org/abs/2506.08899 (see https://github.com/DasElias/LLM-DDL-NLP?tab=readme-ov-file for the datasets used in the experiment for this paper).
-
+6. Horner, E., Mateis, C., Governatori, G., Ciabattoni, A. (2025). From Legal Texts to Defeasible Deontic Logic via LLMs: A Study in Automated Semantic Analysis. arXiv. https://arxiv.org/abs/2506.08899 (see [LLM-DDL-NLP](https://github.com/DasElias/LLM-DDL-NLP) for the datasets used in the experiment for this paper).
 
 The dataset is released under CC-BY-SA 4.0 license. 
